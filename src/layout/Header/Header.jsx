@@ -12,7 +12,7 @@ export const Header = () => {
         className={styles.logo}
       />
 
-      <NavBlock />
+      <NavBlock header='true' />
 
       <ContactsList />
     </header>
