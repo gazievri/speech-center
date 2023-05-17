@@ -1,0 +1,38 @@
+@import "../../styles/@mixins"
+
+.howToFind
+    max-width: 1110px
+    width: 100%
+    margin: 0 auto
+.title
+    padding-top: 40px
+    @include howToFindTitle
+.wrapper
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding: 53px 0 40px
+
+.list
+    display: flex
+    flex-direction: column
+    gap: 25px
+    max-width: 48%
+
+.element__iconCheck
+    background-image: url('../../assets/icons/iconCheck.svg')
+    background-repeat: no-repeat
+    min-width: 42px
+    height: 42px
+
+.element__iconCross
+    background-image: url('../../assets/icons/iconCross.svg') 
+    background-repeat: no-repeat
+    min-width: 42px
+    height: 42px
+
+.item 
+    display: flex
+    gap: 25px
+    @include howToFindText
+
