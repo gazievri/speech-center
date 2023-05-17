@@ -1,0 +1,48 @@
+@import "../../styles/@mixins"
+
+.hero
+    width: 100%
+    min-height: 642px
+    background: linear-gradient(0deg, #71A4D7, #71A4D7), linear-gradient(135deg, #205C90 0%, #0199AF 50%, #ABC6CE 100%)
+    border-radius: 100px
+    padding: 98px 73px 43px 166px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+    box-sizing: border-box
+
+.services
+
+
+.service
+    display: flex
+    gap: 10px
+
+.serviceText
+    @include heroText
+    color: white
+    max-width: 525px
+
+.link
+    color: rgba(255, 255, 255, 0.5)
+    @include heroLink
+    display: flex
+    align-items: flex-end
+
+.moto
+    @include heroMoto
+    color: #FACD83
+    margin: 24px 0 20px
+
+.imgBack
+    background: #FACD83
+    border-radius: 200px 20px 0px 20px
+    width: 551px
+    height: 501px
+    position: relative
+
+.img
+    position: absolute
+    bottom: 0
+    right: 0
+    

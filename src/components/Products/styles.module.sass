@@ -1,0 +1,26 @@
+@import "../../styles/@mixins"
+
+.products
+    min-height: 500px
+    padding: 70px 0 0
+    display: flex
+    justify-content: center
+
+.menu
+    display: flex
+
+.menuBtn
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 278px
+    height: 104px
+    border-radius: 50px 50px 0px 0px
+    @include productMenu
+    text-align: center
+    background-color: #71A4D7
+
+.menuBtnActive
+    composes: menuBtn
+    background: #FACD83
+    

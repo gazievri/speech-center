@@ -1,4 +1,4 @@
-import styles from "./Header.module.sass";
+import styles from './styles.module.sass';
 import logo from "../../assets/images/logo-header.svg";
 import { NavBlock } from "../../components/NavBlock/NavBlock";
 import { ContactsList } from "../../components/ContactsList/ContactsList";
@@ -12,7 +12,7 @@ export const Header = () => {
         className={styles.logo}
       />
 
-      <NavBlock header />
+      <NavBlock />
 
       <ContactsList />
     </header>

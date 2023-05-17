@@ -1,4 +1,4 @@
-import styles from "./NavBlock.module.sass";
+import styles from "./styles.module.sass";
 import { HashLink } from "react-router-hash-link";
 
 export const NavBlock = ({ header = false, footer = false }) => {
