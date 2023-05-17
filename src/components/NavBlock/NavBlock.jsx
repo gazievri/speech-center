@@ -1,23 +1,23 @@
-import styles from './NavBlock.module.sass';
-import { HashLink } from 'react-router-hash-link';
+import styles from "./NavBlock.module.sass";
+import { HashLink } from "react-router-hash-link";
 
-export const NavBlock = () => {
+export const NavBlock = ({ header = false, footer = false }) => {
   return (
-    <nav className={styles.navblock}>
-      <ul className={styles.navlist}>
-        <li>
+    <nav className={header ? styles.navblock : styles.navblockFooter}>
+      <ul className={header ? styles.navlist : styles.navlistFooter}>
+        <li className={footer && styles.navlistFooterLi}>
           <HashLink to="/#hero">Доказательства экспертности</HashLink>
         </li>
-        <li>
+        <li className={footer && styles.navlistFooterLi}>
           <HashLink to="/#hero">Услуги и цены</HashLink>
         </li>
-        <li>
+        <li className={footer && styles.navlistFooterLi}>
           <HashLink to="/#hero">Советы</HashLink>
         </li>
-        <li>
+        <li className={footer && styles.navlistFooterLi}>
           <HashLink to="/#hero">Отзывы</HashLink>
         </li>
-        <li>
+        <li className={footer && styles.navlistFooterLi}>
           <HashLink to="/#hero">Контакты</HashLink>
         </li>
       </ul>

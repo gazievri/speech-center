@@ -1,0 +1,59 @@
+@import "../../styles/@mixins"
+
+.footer
+    height: 266px
+    width: 100%
+    background-color: #71A4D7
+    display: flex
+    justify-content: center
+
+.footerWrapper
+    width: 100%
+    max-width: 1110px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.logo
+    width: 255px
+    height: 71px
+
+.address
+    display: flex
+    flex-direction: column
+
+.link
+    display: flex
+    gap: 10px
+    height: 27px
+    align-items: center
+    @include contacts
+    color: white
+
+.iconPhone
+    background-image: url('../../assets/icons/phoneFooter.svg')
+    width: 20px
+    height: 20px
+
+.iconPlace
+    background-image: url('../../assets/icons/adressFooter.svg')
+    width: 15px
+    height: 20px
+
+.address
+    display: flex
+    flex-direction: column
+
+.linkSocialFb
+    background-image: url('../../assets/icons/facebookSocial.svg')
+    width: 24px
+    height: 24px
+.linkSocialInst
+    background-image: url('../../assets/icons/instagramSocial.svg')
+    width: 24px
+    height: 24px
+
+.footer__socials
+    padding-top: 14px
+    display: flex
+    gap: 10px

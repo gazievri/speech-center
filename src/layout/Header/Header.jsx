@@ -11,7 +11,7 @@ export const Header = () => {
         className={styles.logo}
       />
 
-      <NavBlock />
+      <NavBlock header/>
 
       <address>
         <a
