@@ -5,7 +5,7 @@ import { howToFindData } from '../../data/data'
 export const HowToFind = () => {
 
     return (
-        <section className={styles.howToFind}>
+        <section className={styles.howToFind} id='tips'>
             <h2 className={styles.title}>Как найти хорошего специалиста по речи:</h2>
             <article className={styles.wrapper}>
 

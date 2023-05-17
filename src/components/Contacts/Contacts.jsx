@@ -3,7 +3,7 @@ import { ContactsList } from "../../components/ContactsList/ContactsList";
 
 export const Contacts = () => {
   return (
-    <section className={styles.contacts}>
+    <section className={styles.contacts} id='contacts'>
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A74fc46ef33f0794780fe760e41ed843fd9cb642dd1647d04694afa788e9dc657&amp;source=constructor"
         width="536"

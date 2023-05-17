@@ -5,7 +5,7 @@ export const Products = () => {
   const [active, setActive] = useState(1);
 
   return (
-    <section className={styles.products}>
+    <section className={styles.products} id='products'>
       <div className={styles.menu}>
         <button
           className={active === 1 ? styles.menuBtnActive : styles.menuBtn}

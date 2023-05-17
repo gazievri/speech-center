@@ -9,16 +9,16 @@ export const NavBlock = ({ header = false, footer = false }) => {
           <HashLink to="/#hero">Доказательства экспертности</HashLink>
         </li>
         <li className={footer ? styles.navlistFooterLi : ''}>
-          <HashLink to="/#hero">Услуги и цены</HashLink>
+          <HashLink to="/#products">Услуги и цены</HashLink>
         </li>
         <li className={footer ? styles.navlistFooterLi : ''}>
-          <HashLink to="/#hero">Советы</HashLink>
+          <HashLink to="/#tips">Советы</HashLink>
         </li>
         <li className={footer ? styles.navlistFooterLi : ''}>
           <HashLink to="/#hero">Отзывы</HashLink>
         </li>
         <li className={footer ? styles.navlistFooterLi : ''}>
-          <HashLink to="/#hero">Контакты</HashLink>
+          <HashLink to="/#contacts">Контакты</HashLink>
         </li>
       </ul>
     </nav>
