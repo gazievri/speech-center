@@ -17,6 +17,7 @@ export const Contacts = () => {
         <p className={styles.text}>Ждем Вас! Мы работаем с 9 утра до 10 вечера каждый день.</p>
         <ContactsList contacts/>
       </div>
+      <div className={styles.round}></div>
     </section>
   );
 };
