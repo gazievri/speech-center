@@ -11,12 +11,12 @@ export const HowToFind = () => {
 
                 <ul className={styles.list}>
 
-                {howToFindData[0].map(el => <li className={styles.item}> <div className={styles.element__iconCheck}/> <p>{el}</p></li>)}
+                {howToFindData[0].map((el, index) => <li className={styles.item} key={index}> <div className={styles.element__iconCheck}/> <p>{el}</p></li>)}
                     
                 </ul>
 
                 <ul className={styles.list}>
-                {howToFindData[1].map(el => <li className={styles.item}> <div className={styles.element__iconCross}/> <p>{el}</p></li>)}
+                {howToFindData[1].map((el, index) => <li className={styles.item}key={index}> <div className={styles.element__iconCross}/> <p>{el}</p></li>)}
                 </ul>
 
 

@@ -1,6 +1,7 @@
-import styles from './Header.module.sass';
-import logo from '../../assets/images/logo-header.svg';
-import { NavBlock } from '../../components/NavBlock/NavBlock';
+import styles from "./Header.module.sass";
+import logo from "../../assets/images/logo-header.svg";
+import { NavBlock } from "../../components/NavBlock/NavBlock";
+import { ContactsList } from "../../components/ContactsList/ContactsList";
 
 export const Header = () => {
   return (
@@ -11,39 +12,9 @@ export const Header = () => {
         className={styles.logo}
       />
 
-      <NavBlock header/>
+      <NavBlock header />
 
-      <address>
-        <a
-          className={styles.link}
-          href="tel:+79683829463"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className={styles.iconPhone} />
-          +7 (968) 382 94 63
-        </a>
-
-        <a
-          className={styles.link}
-          href="tel:+79636942941"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className={styles.iconPhone} />
-          +7 (963) 694 29 41
-        </a>
-
-        <a
-          className={styles.link}
-          target="_blank"
-          rel="noreferrer"
-          href="https://yandex.ru/maps/-/CCUoMSaO2C"
-        >
-          <div className={styles.iconPlace} />
-          Калашный переулок, 5
-        </a>
-      </address>
+      <ContactsList />
     </header>
   );
 };
