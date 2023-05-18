@@ -1,0 +1,150 @@
+@import "../../../styles/@mixins"
+
+.container
+    max-width: 1110px
+    width: 100%
+    z-index: 1
+    margin-bottom: 126px
+
+.title
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 35px
+    line-height: 44px
+    color: black
+    margin-bottom: 20px
+
+.wrapper
+    display: flex
+    justify-content: space-between
+    margin-top: 11px
+    margin-bottom: 58px
+
+.listBenefits
+    display: flex
+    flex-direction: column
+    gap: 8px
+
+.listBenefitsItem
+    @include textPriceBlock
+    font-weight: 400
+    font-size: 20px
+    line-height: 44px
+    color: black
+    position: relative
+    margin-left: 46px
+
+.listBenefitsItem::before
+    content: ""
+    width: 34px
+    height: 3px
+    background-color: #71A4D7
+    position: absolute
+    left: -46px
+    top: 50%
+    margin-top: -1.5px
+
+.priceBlock
+    background: #71A4D7
+    border-radius: 10px
+    max-width: 635px
+    width: 100%
+    padding: 25px 0 23px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-height: 300px
+    box-sizing: border-box
+
+.price
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 35px
+    line-height: 44px
+
+.time
+    @include textPriceBlock
+    font-weight: 200
+    font-size: 14px
+    padding-top: 5px
+
+.abonement
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 20px
+    line-height: 35px
+
+.discountsBlock
+    display: flex
+    flex-direction: column
+    gap: 5px
+    max-width: 310px
+    width: 100%
+
+.discountsTitle
+    @include textPriceBlock
+    font-weight: 600
+    font-size: 20px
+    line-height: 40px
+
+.discountsItem
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 20px
+    line-height: 34px
+
+.content
+    display: flex
+    margin: 35px 0 20px
+    gap: 32px
+
+.text
+    @include textPriceBlock
+    font-weight: 400
+    font-size: 22px
+    line-height: 30px
+    color: #232323
+
+.listParagraphs
+    display: flex
+    flex-direction: column
+    gap: 20px
+    margin: 20px 0
+
+.textBlue
+    @include textPriceBlock
+    color: #71A4D7
+    font-weight: 700
+    line-height: 36px
+    font-size: 24px
+
+.spanBlue
+    color: #71A4D7
+
+.spanBlack
+    font-weight: 600
+
+.img
+    width: 348px
+    height: 502px
+    object-fit: contain
+
+.textCTA
+    @include textPriceBlock
+    font-weight: 700
+    font-size: 30px
+    line-height: 30px
+    color: #71A4D7
+    margin: 20px 0 30px
+
+.textFinal
+    @include textPriceBlock
+    font-weight: 400
+    font-size: 20px
+    line-height: 30px
+    color: #232323
+
+.wrapperBtn
+    width: 100%
+    display: flex
+    justify-content: center

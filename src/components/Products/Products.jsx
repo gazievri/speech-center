@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import styles from './styles.module.sass';
+import { Stuttering } from './index';
 
 export const Products = () => {
   const [active, setActive] = useState(1);
 
   return (
-    <section className={styles.products} id='products'>
+    <section className={styles.section} id='products'>
       <div className={styles.menu}>
         <button
           className={active === 1 ? styles.menuBtnActive : styles.menuBtn}
@@ -41,6 +42,8 @@ export const Products = () => {
           дислалия
         </button>
       </div>
+      <div className={styles.circleOne} />
+      <Stuttering />
     </section>
   );
 };

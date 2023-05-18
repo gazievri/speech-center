@@ -1,10 +1,13 @@
 @import "../../styles/@mixins"
 
-.products
+.section
     min-height: 500px
     padding: 70px 0 0
     display: flex
-    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 50px
+    position: relative
 
 .menu
     display: flex
@@ -23,4 +26,13 @@
 .menuBtnActive
     composes: menuBtn
     background: #FACD83
-    
+
+.circleOne
+    position: absolute
+    width: 301px
+    height: 301px
+    border-radius: 50%
+    background: #FACD83
+    z-index: 0
+    right: 40px
+    top: 330px
