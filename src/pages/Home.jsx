@@ -4,6 +4,7 @@ import { HowToFind } from '../components/HowToFind/HowToFind';
 import { SectionMoto } from '../components/SectionMoto/SectionMoto';
 import { Products } from '../components/Products/Products';
 import { WithYou } from '../components/WithYou/WithYou';
+import { ReviewSwiper } from '../components/ReviewSwiper/ReviewSwiper';
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
       <Products />
       <SectionMoto text='И помните - главное начать' />
       <HowToFind />
+      <ReviewSwiper />
       <WithYou />
       <Contacts />
     </>
