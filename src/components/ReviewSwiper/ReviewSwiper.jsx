@@ -28,6 +28,7 @@ export const ReviewSwiper = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className={styles.round}/>
        
       </div>
     </section>

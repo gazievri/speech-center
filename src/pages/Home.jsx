@@ -12,7 +12,7 @@ export const Home = () => {
       <Hero />
       <SectionMoto text='Татьяна - ваш эксклюзивный специалист' />
       <Products />
-      <SectionMoto text='И помните - главное начать' />
+      <SectionMoto text='И помните - главное начать' second/>
       <HowToFind />
       <ReviewSwiper />
       <WithYou />

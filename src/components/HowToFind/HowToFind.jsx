@@ -6,6 +6,8 @@ export const HowToFind = () => {
 
     return (
         <section className={styles.howToFind} id='tips'>
+
+            <div className={styles.howToFindWrapper}>
             <h2 className={styles.title}>Как найти хорошего специалиста по речи:</h2>
             <article className={styles.wrapper}>
 
@@ -23,7 +25,7 @@ export const HowToFind = () => {
 
             </article>
 
-
+            </div>
         </section>
     )
 }
