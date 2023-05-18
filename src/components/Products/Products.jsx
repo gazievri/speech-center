@@ -6,7 +6,7 @@ export const Products = () => {
   const [active, setActive] = useState(1);
 
   return (
-    <section className={styles.section} id='products'>
+    <section className={styles.section} id="products">
       <div className={styles.menu}>
         <button
           className={active === 1 ? styles.menuBtnActive : styles.menuBtn}
@@ -43,7 +43,7 @@ export const Products = () => {
         </button>
       </div>
       <div className={styles.circleOne} />
-      <Stuttering />
+      {active === 1 && <Stuttering />}
     </section>
   );
 };

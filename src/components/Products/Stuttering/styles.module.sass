@@ -13,6 +13,19 @@
     line-height: 44px
     color: black
     margin-bottom: 20px
+    position: relative
+    width: fit-content
+
+.title::before
+    content: ""
+    width: 500px
+    height: 4px
+    background-color: #71A4D7
+    position: absolute
+    bottom: -2px
+    right: -30px
+
+
 
 .textBlueLogoped
     @include textPriceBlock
