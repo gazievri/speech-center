@@ -33,7 +33,7 @@ export const ContactsList = ({ whiteTheme = false, contacts = false}) => {
         Калашный переулок, 5
       </a>
 
-      {contacts && (
+      {/* {contacts && (
         <ul className={styles.contscts__socials}>
           <li className={styles.linkSocialFb}>
             <a
@@ -52,7 +52,9 @@ export const ContactsList = ({ whiteTheme = false, contacts = false}) => {
             ></a>
           </li>
         </ul>
-      )}
+      )} */}
     </address>
   );
 };
+
+
