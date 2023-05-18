@@ -7,7 +7,7 @@ export const Stuttering = () => {
     <article className={styles.container}>
       <h2 className={styles.title}>Заикание</h2>
       <p className={styles.text}>Татьяна не просто логопед, она:</p>
-      <p className={styles.textBlue}>Логопед + педагог по сценической речи = мультиспециалист</p>
+      <p className={styles.textBlueLogoped}>Логопед + педагог по сценической речи = <span className={styles.spanLogoped}>мультиспециалист</span></p>
       <h3 className={styles.text}>Посещая занятия Татьяны, вы получите:</h3>
       <div className={styles.wrapper}>
         <ul className={styles.listBenefits}>
