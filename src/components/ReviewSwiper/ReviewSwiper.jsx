@@ -6,9 +6,9 @@ import { Navigation } from "swiper";
 import { reviewData } from "../../data/data";
 import { ReviewSwiperItem } from "./ReviewSwiperItem";
 
-export const ReviewSwiper = () => {
+export const ReviewSwiper = () => { 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="reviews">
       <h2 className={styles.title}>Наши отзывы, написанные "живой рукой"</h2>
 
       <div className={styles.reviewWrapper}>

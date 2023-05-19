@@ -15,7 +15,7 @@ export const NavBlock = ({ header = false, footer = false }) => {
           <HashLink to="/#tips">Советы</HashLink>
         </li>
         <li className={footer ? styles.navlistFooterLi : ''}>
-          <HashLink to="/#hero">Отзывы</HashLink>
+          <HashLink to="/#reviews">Отзывы</HashLink>
         </li>
         <li className={footer ? styles.navlistFooterLi : ''}>
           <HashLink to="/#contacts">Контакты</HashLink>
