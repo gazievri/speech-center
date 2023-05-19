@@ -1,4 +1,5 @@
 import styles from './styles.module.sass';
+import { ButtonW } from '../../ButtonW/Button';
 
 export const SoundSetting = () => {
   return (
@@ -60,6 +61,9 @@ export const SoundSetting = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className={styles.wrapperBtn}>
+        <ButtonW />
       </div>
     </article>
   );
