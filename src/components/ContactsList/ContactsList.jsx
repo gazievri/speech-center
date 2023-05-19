@@ -2,11 +2,10 @@ import styles from "./styles.module.sass";
 
 export const ContactsList = ({ whiteTheme = false, contacts = false}) => {
   return (
-    <address>
+    <address className={styles.adress}>
       <a
         className={whiteTheme ? styles.linkWhite : styles.link}
         href="tel:+79683829463"
-        target="_blank"
         rel="noreferrer"
       >
         <div className={whiteTheme ? styles.iconPhoneWhite : styles.iconPhone} />
@@ -16,7 +15,6 @@ export const ContactsList = ({ whiteTheme = false, contacts = false}) => {
       <a
         className={whiteTheme ? styles.linkWhite : styles.link}
         href="tel:+79636942941"
-        target="_blank"
         rel="noreferrer"
       >
        <div className={whiteTheme ? styles.iconPhoneWhite : styles.iconPhone} />
