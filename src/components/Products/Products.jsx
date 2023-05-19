@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './styles.module.sass';
 import { Stuttering } from './index';
+import { SoundSetting } from './SoundsSetting/SoundsSetting';
 
 export const Products = () => {
   const [active, setActive] = useState(1);
@@ -43,6 +44,7 @@ export const Products = () => {
         </button>
       </div>
       {active === 1 && <Stuttering />}
+      {active === 2 && <SoundSetting />}
 
     </section>
   );
