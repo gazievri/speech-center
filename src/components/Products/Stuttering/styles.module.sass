@@ -5,6 +5,7 @@
     width: 100%
     z-index: 1
     margin-bottom: 126px
+    position: relative
 
 .title
     @include textPriceBlock
@@ -18,14 +19,12 @@
 
 .title::before
     content: ""
-    width: 500px
+    width: 355px
     height: 4px
     background-color: #71A4D7
     position: absolute
     bottom: -2px
     right: -30px
-
-
 
 .textBlueLogoped
     @include textPriceBlock
@@ -83,6 +82,7 @@
     align-items: center
     max-height: 300px
     box-sizing: border-box
+    z-index: 1
 
 .price
     @include textPriceBlock
@@ -125,6 +125,7 @@
     display: flex
     margin: 35px 0 20px
     gap: 32px
+    position: relative
 
 .text
     @include textPriceBlock
@@ -156,6 +157,7 @@
     width: 348px
     height: 502px
     object-fit: contain
+    z-index: 1
 
 .textCTA
     @include textPriceBlock
@@ -176,3 +178,34 @@
     width: 100%
     display: flex
     justify-content: center
+    position: relative
+
+.circleOne
+    position: absolute
+    width: 301px
+    height: 301px
+    border-radius: 50%
+    background: #FACD83
+    z-index: 0
+    right: -125px
+    top: 130px
+
+.circleTwo
+    position: absolute
+    width: 89px
+    height: 89px
+    border-radius: 50%
+    background: #FACD83
+    z-index: 0
+    right: 0
+    top: 0
+
+.circleThree
+    position: absolute
+    width: 207px
+    height: 207px
+    border-radius: 50%
+    background: #FACD83
+    z-index: 0
+    left: -170px
+    top: 43px

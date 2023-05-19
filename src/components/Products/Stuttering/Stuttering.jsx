@@ -43,6 +43,7 @@ export const Stuttering = () => {
 
       <div className={styles.content}>
         <img src={image} alt="" className={styles.img} />
+        <div className={styles.circleThree} />
         <div>
           <h3 className={styles.text}>
             После нескольких занятий люди часто говорят:
@@ -82,7 +83,11 @@ export const Stuttering = () => {
       </div>
       <div className={styles.wrapperBtn}>
         <ButtonW />
+       <div className={styles.circleTwo} /> 
       </div>
+
+      <div className={styles.circleOne} />
+      
     </article>
   );
 };

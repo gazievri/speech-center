@@ -42,8 +42,8 @@ export const Products = () => {
           дислалия
         </button>
       </div>
-      <div className={styles.circleOne} />
       {active === 1 && <Stuttering />}
+
     </section>
   );
 };
