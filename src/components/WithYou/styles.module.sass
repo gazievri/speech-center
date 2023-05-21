@@ -37,6 +37,9 @@
     top: 210px
     right: -70px
 
+.img
+    object-fit: contain
+
 .roundTwo
     position: absolute
     width: 67px
@@ -45,3 +48,13 @@
     background: #FACD83
     top: 282px
     right: -116px
+
+
+
+@media screen and ('max-width: 1200px')
+    .section
+        padding: 0 35px 70px
+
+    .title
+        @include sectionTitleTablet
+        

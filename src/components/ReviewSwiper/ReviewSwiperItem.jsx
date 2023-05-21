@@ -1,8 +1,11 @@
 import styles from "./styles.module.sass";
-export const ReviewSwiperItem = ({ review }) => {
+export const ReviewSwiperItem = ({ review}) => {
+
   return (
-    <div className={styles.reviewItem}>
-      <img src={review} alt="" className={styles.reviewImg} />
-    </div>
+    <>
+      <div className={styles.reviewItem} >
+        <img src={review} alt="" className={styles.reviewImg} />
+      </div>
+    </>
   );
 };

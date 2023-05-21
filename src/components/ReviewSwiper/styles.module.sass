@@ -1,17 +1,6 @@
 @import "../../styles/@mixins"
 
-
 .swiperContainer
-    // height: 500px
-    // padding: 2rem 0
-    // position: relative
-    .swiper-button-prev .swiper-button-disabled:after
-        background-color: black
-        width: 40px
-        height: 40px
-
-    // .swiper-button-prev
-    //     color: red
 
 .reviewItem
     width: 100%
@@ -54,3 +43,16 @@
     @include howToFindTitle
     padding-bottom: 30px
 
+@media screen and ('max-width: 1200px')
+    .reviewItem
+        max-width: 600px
+        max-height: 380px
+        overflow: hidden
+        margin: 0 auto
+        object-fit: cover
+    .section
+        padding: 70px 35px
+
+    .title
+        @include sectionTitleTablet
+        

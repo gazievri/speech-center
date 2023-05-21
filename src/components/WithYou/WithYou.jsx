@@ -7,7 +7,7 @@ export const WithYou = () => {
       <h2 className={styles.title}>Мы с Вами!</h2>
 
       <div className={styles.wrapper}>
-        <img src={img} alt="" />
+        <img src={img} alt=""  className={styles.img}/>
 
         <div className={styles.textWrapper}>
           <p className={styles.textHeader}>
