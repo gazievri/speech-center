@@ -65,7 +65,7 @@ export const Stuttering = () => {
             </li>
           </ul>
 
-          <p className={styles.text}>
+          <p className={styles.textFinal}>
             <span className={styles.spanBlack}>К чему вы привыкли?</span> К
             тому, что каждый раз у кассы в магазине испытываете напряжение,
             перед тем, как скажете: «пакет, пожалуйста»? К тому, что вашего

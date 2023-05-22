@@ -7,6 +7,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    position: relative
 
 .logo
     width: 255px
@@ -35,6 +36,19 @@
     height: 20px
     background-repeat: no-repeat
 
-.address
-    display: flex
-    flex-direction: column
+@media screen and (max-width: 1200px)
+    .header
+        flex-direction: column
+        align-items: flex-end
+        max-width: 1200px
+        padding-right: 35px
+        padding-top: 30px
+        justify-content: flex-start
+        gap: 22px
+
+    .logo
+        width: 201px
+        height: 60px
+        position: absolute
+        left: 35px
+        top: 30px

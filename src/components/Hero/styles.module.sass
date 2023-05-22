@@ -13,7 +13,6 @@
 
 .services
 
-
 .service
     display: flex
     gap: 10px
@@ -27,7 +26,8 @@
     color: rgba(255, 255, 255, 0.5)
     @include heroLink
     display: flex
-    align-items: flex-end
+    align-self: flex-end
+    height: fit-content
 
 .moto
     @include heroMoto
@@ -41,9 +41,33 @@
     height: 501px
     position: relative
 
-
 .img
     position: absolute
     bottom: 0
     right: 0
-    
+
+@media screen and (max-width: 1430px)
+    .hero
+        padding: 65px 35px 100px
+        border-radius: 80px
+        min-height: 540px
+        justify-content: space-around
+
+    .imgBack
+        border-radius: 160px 20px 0px 20px
+        width: 400px
+        height: 360px
+
+    .img
+        height: 285px
+
+    .serviceText
+        font-size: 24px
+        line-height: 44px
+        max-width: 450px
+
+    .link
+        font-size: 14px
+
+    .moto
+        font-size: 28px

@@ -63,5 +63,3 @@ export const Dysarthria = () => {
     </article>
   );
 };
-
-<iframe width="1497" height="608" src="https://www.youtube.com/embed/X7MeUUHrk4Q" title="Дизартрия" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

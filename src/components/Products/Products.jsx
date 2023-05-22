@@ -42,12 +42,12 @@ export const Products = () => {
           дислалия
         </button>
       </div>
-      
-      {active === 1 && <Stuttering />}
-      {active === 2 && <SoundSetting />}
-      {active === 3 && <Performance />}
-      {active === 4 && <Dysarthria />}
-
+      <div className={styles.wrapper}>
+        {active === 1 && <Stuttering />}
+        {active === 2 && <SoundSetting />}
+        {active === 3 && <Performance />}
+        {active === 4 && <Dysarthria />}
+      </div>
     </section>
   );
 };
