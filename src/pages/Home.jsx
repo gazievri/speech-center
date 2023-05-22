@@ -5,6 +5,7 @@ import { SectionMoto } from '../components/SectionMoto/SectionMoto';
 import { Products } from '../components/Products/Products';
 import { WithYou } from '../components/WithYou/WithYou';
 import { ReviewSwiper } from '../components/ReviewSwiper/ReviewSwiper';
+import { Author } from '../components/Author/Author';
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
       <SectionMoto text='И помните - главное начать' second/>
       <HowToFind />
       <ReviewSwiper />
+      <Author />
       <WithYou />
       <Contacts />
     </>
