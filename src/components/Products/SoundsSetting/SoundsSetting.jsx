@@ -14,11 +14,11 @@ export const SoundSetting = () => {
         <iframe
           width="540"
           height="301"
-          src="https://www.youtube.com/embed/asbB8OPjh3g"
-          title="YouTube video player"
+          src="https://www.youtube.com/embed/8CRgA5fB7bA" 
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          title="Постановка звуков"
         ></iframe>
         <div className={styles.textContainer}>
           <p className={styles.textVideo}>

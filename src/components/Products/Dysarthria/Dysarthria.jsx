@@ -41,11 +41,11 @@ export const Dysarthria = () => {
         <iframe
           width="540"
           height="301"
-          src="https://www.youtube.com/embed/asbB8OPjh3g"
-          title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          src="https://www.youtube.com/embed/X7MeUUHrk4Q" 
+          title="Дизартрия"
         ></iframe>
 
         <div className={styles.videoTextBlock}>
@@ -63,3 +63,5 @@ export const Dysarthria = () => {
     </article>
   );
 };
+
+<iframe width="1497" height="608" src="https://www.youtube.com/embed/X7MeUUHrk4Q" title="Дизартрия" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

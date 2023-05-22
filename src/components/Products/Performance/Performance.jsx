@@ -9,11 +9,11 @@ export const Performance = () => {
         <iframe
           width="540"
           height="301"
-          src="https://www.youtube.com/embed/asbB8OPjh3g"
-          title="YouTube video player"
+          src="https://www.youtube.com/embed/qr741dehI5Q"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          title="Звукопроизношение"
         ></iframe>
         <div className={styles.textContainer}>
           <p className={styles.text}>

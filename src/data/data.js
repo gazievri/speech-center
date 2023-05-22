@@ -2,6 +2,9 @@ import img1 from './images/review.jpg'
 import img2 from './images/review2.jpg'
 import img3 from './images/review3.jpg'
 import img4 from './images/review4.jpg'
+import img5 from './images/review5.jpg'
+import img6 from './images/review6.jpg'
+
 
 export const howToFindData = [
   [
@@ -20,4 +23,4 @@ export const howToFindData = [
 ];
 
 
-export const reviewData = [img1, img2, img3, img4]
+export const reviewData = [img1, img2, img3, img4, img5, img6]
