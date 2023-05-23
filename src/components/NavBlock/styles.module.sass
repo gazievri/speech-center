@@ -11,8 +11,14 @@
     color: white
 
 .navlistFooter
+    display: flex
+    flex-direction: column
     gap: 7px
     @include nav
 
 .navlistFooterLi
     color: white
+
+@media screen and ('max-width: 1200px')
+    .navlistFooter
+        gap: 15px

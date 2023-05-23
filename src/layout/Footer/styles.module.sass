@@ -1,7 +1,7 @@
 @import "../../styles/@mixins"
 
 .footer
-    height: 266px
+    padding: 64px 0 74px
     width: 100%
     background-color: #71A4D7
     display: flex
@@ -17,3 +17,37 @@
 .logo
     width: 255px
     height: 71px
+
+.iconPhoneWhite
+    background-image: url('../../assets/icons/phoneFooter.svg')
+    width: 20px
+    height: 20px
+
+.iconPlaceWhite
+    background-image: url('../../assets/icons/adressFooter.svg')
+    width: 20px
+    height: 20px
+
+.address
+    display: flex
+    flex-direction: column
+
+.address
+    display: flex
+    flex-direction: column
+
+.adressContacts
+    display: flex
+    flex-direction: column
+
+.linkWhite
+    display: flex
+    gap: 10px
+    height: 27px
+    align-items: center
+    @include contacts
+    color: white
+
+@media screen and (max-width: 1200px)
+    .footer
+        padding: 35px 35px 70px
