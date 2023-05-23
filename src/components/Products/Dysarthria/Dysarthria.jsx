@@ -1,7 +1,9 @@
 import styles from './styles.module.sass';
 import { ButtonW } from '../../ButtonW/Button';
+import video from '../../../assets/video/sounds.mp4';
 
 export const Dysarthria = () => {
+
   return (
     <article className={styles.container}>
       <h2 className={styles.title}>
@@ -38,15 +40,18 @@ export const Dysarthria = () => {
       </div>
 
       <div className={styles.containerTwo}>
-        <iframe
-          width="540"
-          height="301"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          src="https://www.youtube.com/embed/X7MeUUHrk4Q" 
-          title="Дизартрия"
-        ></iframe>
+        <video
+          src={video}
+          className={styles.video}
+          type="video/mp4"
+          controls
+          muted
+        >
+          <p>
+            Ваш браузер не поддерживает встроенные видео. Вы сможете просмотреть его
+            <a href="https://youtu.be/8CRgA5fB7bA">этой ссылке</a>.
+          </p>
+        </video>
 
         <div className={styles.videoTextBlock}>
           <h4 className={styles.listVideoTitle}>Знакомьтесь, Алексей!</h4>
@@ -54,8 +59,12 @@ export const Dysarthria = () => {
             <li className={styles.listVideoItem}>55 лет</li>
             <li className={styles.listVideoItem}>Афазия</li>
             <li className={styles.listVideoItem}>Потерял дар речи</li>
-            <li className={styles.listVideoItem}>И вот мы снова в первый класс!</li>
-            <li className={styles.listVideoItem}>Работаем сложно, упорно, эффективно</li>
+            <li className={styles.listVideoItem}>
+              И вот мы снова в первый класс!
+            </li>
+            <li className={styles.listVideoItem}>
+              Работаем сложно, упорно, эффективно
+            </li>
           </ul>
         </div>
       </div>

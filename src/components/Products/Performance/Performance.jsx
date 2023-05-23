@@ -1,20 +1,26 @@
 import styles from './styles.module.sass';
 import { ButtonW } from '../../ButtonW/Button';
+import video from '../../../assets/video/performance.mp4'
 
 export const Performance = () => {
   return (
     <article className={styles.container}>
       <h2 className={styles.title}>Ребёнок молчит у доски?</h2>
       <div className={styles.conteinerOne}>
-        <iframe
-          width="540"
-          height="301"
-          src="https://www.youtube.com/embed/qr741dehI5Q"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          title="Звукопроизношение"
-        ></iframe>
+        <video
+          src={video}
+          className={styles.video}
+          type="video/mp4"
+          controls
+          muted
+        >
+          <p>
+            Ваш браузер не поддерживает встроенные видео. Вы сможете просмотреть
+            его
+            <a href="https://youtu.be/_IE5nqNm50s">этой ссылке</a>.
+          </p>
+        </video>
+
         <div className={styles.textContainer}>
           <p className={styles.text}>
             Ты <span className={styles.textBlue}>сможешь легко</span> и даже без
@@ -44,15 +50,25 @@ export const Performance = () => {
 
       <div className={styles.conteinerTwo}>
         <div className={styles.priceBlock}>
-          <p className={styles.price}>индивидуально 2500 ₽ <span className={styles.priceSpan}>(1 час)</span></p>
-          <p className={styles.price}>групповое занятие 2000 ₽ <span className={styles.priceSpan}>(2 часа)</span></p>
+          <p className={styles.price}>
+            индивидуально 2500 ₽{' '}
+            <span className={styles.priceSpan}>(1 час)</span>
+          </p>
+          <p className={styles.price}>
+            групповое занятие 2000 ₽{' '}
+            <span className={styles.priceSpan}>(2 часа)</span>
+          </p>
 
           <div className={styles.discountsBlock}>
             <h4 className={styles.discountsTitle}>Скидки:</h4>
             <p className={styles.discountsTitle}>Многодетным семьям:</p>
             <ul>
-              <li className={styles.discountsItem}>Инвалиды - 200 ₽</li>
-              <li className={styles.discountsItem}>Ветераны - 300 ₽</li>
+              <li className={styles.discountsItem}>
+                500 ₽ (индивидуальное занятие)
+              </li>
+              <li className={styles.discountsItem}>
+                200 ₽ (групповое занятие)
+              </li>
             </ul>
           </div>
         </div>

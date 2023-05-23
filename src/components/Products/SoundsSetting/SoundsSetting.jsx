@@ -1,5 +1,6 @@
 import styles from './styles.module.sass';
 import { ButtonW } from '../../ButtonW/Button';
+import video from '../../../assets/video/postanovka.mp4'
 
 export const SoundSetting = () => {
   return (
@@ -11,15 +12,19 @@ export const SoundSetting = () => {
         четким тренингам.
       </p>
       <div className={styles.conteinerOne}>
-        <iframe
-          width="540"
-          height="301"
-          src="https://www.youtube.com/embed/8CRgA5fB7bA" 
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          title="Постановка звуков"
-        ></iframe>
+        <video
+          src={video}
+          className={styles.video}
+          type="video/mp4"
+          controls
+          muted
+        >
+          <p>
+            Ваш браузер не поддерживает встроенные видео. Вы сможете просмотреть
+            его
+            <a href="https://youtu.be/8CRgA5fB7bA">этой ссылке</a>.
+          </p>
+        </video>
         <div className={styles.textContainer}>
           <p className={styles.textVideo}>
             Теперь Сергей Михайлович легко общается и дарит людям энергию,
