@@ -4,8 +4,10 @@ import { HowToFind } from '../components/HowToFind/HowToFind';
 import { SectionMoto } from '../components/SectionMoto/SectionMoto';
 import { Products } from '../components/Products/Products';
 import { WithYou } from '../components/WithYou/WithYou';
-import { ReviewSwiper } from '../components/ReviewSwiper/ReviewSwiper';
+import { SwiperWeb } from '../components/SwiperWeb/SwiperWeb';
 import { Author } from '../components/Author/Author';
+import { reviewData } from "../data/data";
+import { CERTIFICATES_DATA } from '../data/certificate/certificates';
 
 export const Home = () => {
   return (
@@ -15,8 +17,9 @@ export const Home = () => {
       <Products />
       <SectionMoto text='И помните - главное начать' second/>
       <HowToFind />
-      <ReviewSwiper />
+      <SwiperWeb data={reviewData} title='Наши отзывы, написанные "живой рукой"'/>
       <Author />
+      <SwiperWeb data={CERTIFICATES_DATA} title='Сертификаты' />
       <WithYou />
       <Contacts />
     </>

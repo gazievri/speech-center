@@ -3,27 +3,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import { Navigation } from "swiper";
-import { reviewData } from "../../data/data";
-import { ReviewSwiperItem } from "./ReviewSwiperItem";
+import { SwiperWebItem } from "./SwiperWebItem";
 
-export const ReviewSwiper = () => {
+export const SwiperWeb = ({title = '', data}) => {
   return (
     <section className={styles.section} id="reviews">
-      <h2 className={styles.title}>Наши отзывы, написанные "живой рукой"</h2>
+      <h2 className={styles.title}>{title}</h2>
 
       <div className={styles.reviewWrapper}>
         <Swiper
-          //   grabCursor={true}
-          //   centeredSlides={true}
-          //   slidesPerView={1}
           modules={[Navigation]}
           className={styles.swiperContainer}
           navigation={true}
           //   rewind={true}
         >
-          {reviewData.map((item, index) => (
+          {data.map((item, index) => (
             <SwiperSlide key={index}>
-              <ReviewSwiperItem review={item}  />
+              <SwiperWebItem review={item}  />
             </SwiperSlide>
           ))}
         </Swiper>

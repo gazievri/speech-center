@@ -1,5 +1,5 @@
 import styles from "./styles.module.sass";
-export const ReviewSwiperItem = ({ review}) => {
+export const SwiperWebItem = ({ review}) => {
 
   return (
     <>
