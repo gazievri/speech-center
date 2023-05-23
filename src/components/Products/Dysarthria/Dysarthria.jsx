@@ -1,9 +1,8 @@
 import styles from './styles.module.sass';
 import { ButtonW } from '../../ButtonW/Button';
-import video from '../../../assets/video/sounds.mp4';
+// import video from '../../../assets/video/sounds.mp4';
 
 export const Dysarthria = () => {
-
   return (
     <article className={styles.container}>
       <h2 className={styles.title}>
@@ -40,8 +39,8 @@ export const Dysarthria = () => {
       </div>
 
       <div className={styles.containerTwo}>
-        <video
-          src={video}
+        {/* <video
+          src=""
           className={styles.video}
           type="video/mp4"
           controls
@@ -51,7 +50,17 @@ export const Dysarthria = () => {
             Ваш браузер не поддерживает встроенные видео. Вы сможете просмотреть его
             <a href="https://youtu.be/8CRgA5fB7bA">этой ссылке</a>.
           </p>
-        </video>
+        </video> */}
+
+        <iframe
+          width="540"
+          height="301"
+          src="https://www.youtube.com/embed/8CRgA5fB7bA"
+          title="Постановка звуков"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
 
         <div className={styles.videoTextBlock}>
           <h4 className={styles.listVideoTitle}>Знакомьтесь, Алексей!</h4>

@@ -1,14 +1,14 @@
 import styles from './styles.module.sass';
 import { ButtonW } from '../../ButtonW/Button';
-import video from '../../../assets/video/performance.mp4'
+// import video from '../../../assets/video/performance.mp4'
 
 export const Performance = () => {
   return (
     <article className={styles.container}>
       <h2 className={styles.title}>Ребёнок молчит у доски?</h2>
       <div className={styles.conteinerOne}>
-        <video
-          src={video}
+        {/* <video
+          src={"https://youtu.be/_IE5nqNm50s"}
           className={styles.video}
           type="video/mp4"
           controls
@@ -19,7 +19,17 @@ export const Performance = () => {
             его
             <a href="https://youtu.be/_IE5nqNm50s">этой ссылке</a>.
           </p>
-        </video>
+        </video> */}
+
+        <iframe
+          width="540"
+          height="318"
+          src="https://www.youtube.com/embed/_IE5nqNm50s"
+          title="Повышение успеваемости"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
 
         <div className={styles.textContainer}>
           <p className={styles.text}>
