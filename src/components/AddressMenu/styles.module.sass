@@ -1,0 +1,36 @@
+@import "../../styles/@mixins"
+
+.address
+    display: flex
+    flex-direction: column
+    position: absolute
+    width: 230px
+    height: 76px
+    background: #E8EAF1
+    border-radius: 0px 0px 10px 10px
+    top: 70px
+    padding: 0 12px 12px
+    gap: 7px
+    z-index: 100
+
+.addressOff
+    display: none
+
+.link
+    display: flex
+    gap: 10px
+    height: 27px
+    align-items: center
+    @include contacts
+    color: black
+    font-size: 14px
+
+.iconPhone
+    background-image: url('../../assets/icons/phoneHeader.svg')
+    width: 20px
+    height: 20px
+
+.iconPlace
+    background-image: url('../../assets/icons/adressHeader.svg')
+    width: 15px
+    height: 20px
