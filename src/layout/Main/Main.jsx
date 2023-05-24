@@ -1,5 +1,5 @@
 import styles from './Main.module.sass';
-import { Home } from '../../Pages/Home';
+import { Home } from '../../pages/Home';
 
 export const Main = () => {
   return (
