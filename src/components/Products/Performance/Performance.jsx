@@ -7,22 +7,8 @@ export const Performance = () => {
     <article className={styles.container}>
       <h2 className={styles.title}>Ребёнок молчит у доски?</h2>
       <div className={styles.conteinerOne}>
-        {/* <video
-          src={"https://youtu.be/_IE5nqNm50s"}
-          className={styles.video}
-          type="video/mp4"
-          controls
-          muted
-        >
-          <p>
-            Ваш браузер не поддерживает встроенные видео. Вы сможете просмотреть
-            его
-            <a href="https://youtu.be/_IE5nqNm50s">этой ссылке</a>.
-          </p>
-        </video> */}
-
         <iframe
-          width="540"
+          width="100%"
           height="318"
           src="https://www.youtube.com/embed/_IE5nqNm50s"
           title="Повышение успеваемости"

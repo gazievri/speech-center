@@ -32,6 +32,7 @@ export const Stuttering = () => {
               <li className={styles.discountsItem}>Ветераны - 300 ₽</li>
             </ul>
           </div>
+          <div className={styles.circleOne} />
         </div>
       </div>
 
@@ -85,8 +86,6 @@ export const Stuttering = () => {
         <ButtonW />
        <div className={styles.circleTwo} /> 
       </div>
-
-      <div className={styles.circleOne} />
       
     </article>
   );

@@ -12,29 +12,17 @@ export const SoundSetting = () => {
         четким тренингам.
       </p>
       <div className={styles.conteinerOne}>
-        {/* <video
-          src=""
-          className={styles.video}
-          type="video/mp4"
-          controls
-          muted
-        >
-          <p>
-            Ваш браузер не поддерживает встроенные видео. Вы сможете просмотреть
-            его
-            <a href="https://youtu.be/8CRgA5fB7bA">этой ссылке</a>.
-          </p>
-        </video> */}
-
-        <iframe
-          width="540"
-          height="301"
-          src="https://www.youtube.com/embed/RNC4q41oNZw"
-          title="Постановка звуков"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <div className={styles.iframeContainer}>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/RNC4q41oNZw"
+            title="Постановка звуков"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <div className={styles.textContainer}>
           <p className={styles.textVideo}>

@@ -72,6 +72,7 @@
     margin-top: -1.5px
 
 .priceBlock
+    position: relative
     background: #71A4D7
     border-radius: 10px
     max-width: 635px
@@ -188,7 +189,7 @@
     background: #FACD83
     z-index: 0
     right: -125px
-    top: 130px
+    top: -55px
 
 .circleTwo
     position: absolute
@@ -243,7 +244,8 @@
         font-size: 18px
 
     .circleOne
-        right: -35px
+        right: -37px
+        top: -63px
         width: 250px
         height: 250px
 
@@ -274,3 +276,33 @@
 
     .price
         font-size: 24px
+
+
+@media screen and (max-width: 1000px)
+    .container
+        padding: 0 15px
+
+
+@media screen and (max-width: 850px)
+    .wrapper
+        flex-direction: column
+        gap: 40px
+
+    .priceBlock
+        align-self: center
+      
+
+    .circleOne
+        top: -30px
+        right: -15px
+        width: 117px
+        height: 117px
+
+
+
+    .img, .circleThree
+        display: none
+
+    .wrapperBtn
+        justify-content: center
+        margin-left: 0
