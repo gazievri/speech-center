@@ -7,8 +7,9 @@ export const WithYou = () => {
       <h2 className={styles.title}>Мы с Вами!</h2>
 
       <div className={styles.wrapper}>
+        <div className={styles.imgWrapper}>
         <img src={img} alt=""  className={styles.img}/>
-
+        </div>
         <div className={styles.textWrapper}>
           <p className={styles.textHeader}>
             Окружающим бывает сложно понять, что вы говорите?
