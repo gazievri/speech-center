@@ -5,7 +5,8 @@
     width: 100%
     background-color: #71A4D7
     display: flex
-    justify-content: center
+    align-items: center
+    flex-direction: column
 
 .footerWrapper
     width: 100%
@@ -47,6 +48,13 @@
     align-items: center
     @include contacts
     color: white
+
+
+.credentials
+    display: flex
+    margin: 50px auto 0
+    gap: 100px
+    
 
 @media screen and (max-width: 1200px)
     .footer
