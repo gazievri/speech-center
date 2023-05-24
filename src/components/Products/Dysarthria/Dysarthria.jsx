@@ -79,7 +79,7 @@ export const Dysarthria = () => {
             <h3 className={styles.price}>Цена обсуждается индивидуально</h3>
             <div className={styles.discounts}>
               <h4 className={styles.discountsTitle}>Скидки:</h4>
-              <ul>
+              <ul className={styles.discountsItem}>
                 <li className={styles.discountsItem}>
                   Многодетные семьи - 200 ₽
                 </li>
@@ -88,7 +88,9 @@ export const Dysarthria = () => {
               </ul>
             </div>
           </div>
-          <ButtonW />
+          <div className={styles.btnWrapper}>
+            <ButtonW />
+          </div>
         </>
       )}
     </article>
