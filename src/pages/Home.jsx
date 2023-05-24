@@ -8,8 +8,12 @@ import { SwiperWeb } from '../components/SwiperWeb/SwiperWeb';
 import { Author } from '../components/Author/Author';
 import { reviewData } from "../data/data";
 import { CERTIFICATES_DATA } from '../data/certificate/certificates';
+import useMediaQuery from "../utils/useMediaQuery";
+import { SwiperMob } from '../components/SwiperWeb/SwiperMob';
 
 export const Home = () => {
+
+  const isMobile = useMediaQuery("(max-width: 800px)");
   return (
     <>
       <Hero />
@@ -17,9 +21,10 @@ export const Home = () => {
       <Products />
       <SectionMoto text='И помните - главное начать' second/>
       <HowToFind />
-      <SwiperWeb data={reviewData} title='Наши отзывы, написанные "живой рукой"'/>
+      {isMobile ? <SwiperMob data={reviewData} title='Наши отзывы, написанные "живой рукой"'/> : <SwiperWeb data={reviewData} title='Наши отзывы, написанные "живой рукой"'/>}
+      
       <Author />
-      <SwiperWeb data={CERTIFICATES_DATA} title='Сертификаты' />
+      {isMobile ? <SwiperMob data={CERTIFICATES_DATA} title='Сертификаты'/> : <SwiperWeb data={CERTIFICATES_DATA} title='Сертификаты'/>}
       <WithYou />
       <Contacts />
     </>
