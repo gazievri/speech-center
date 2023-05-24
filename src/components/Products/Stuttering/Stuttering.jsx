@@ -7,12 +7,17 @@ export const Stuttering = () => {
     <article className={styles.container}>
       <h2 className={styles.title}>Заикание</h2>
       <p className={styles.text}>Татьяна не просто логопед, она:</p>
-      <p className={styles.textBlueLogoped}>Логопед + педагог по сценической речи = <span className={styles.spanLogoped}>мультиспециалист</span></p>
+      <p className={styles.textBlueLogoped}>
+        Логопед + педагог по сценической речи ={' '}
+        <span className={styles.spanLogoped}>мультиспециалист</span>
+      </p>
       <h3 className={styles.text}>Посещая занятия Татьяны, вы получите:</h3>
       <div className={styles.wrapper}>
         <ul className={styles.listBenefits}>
           <li className={styles.listBenefitsItem}>Тренинги по логопедии</li>
-          <li className={styles.listBenefitsItem}>Актерские речевые тренинги</li>
+          <li className={styles.listBenefitsItem}>
+            Актерские речевые тренинги
+          </li>
           <li className={styles.listBenefitsItem}>Дыхательные тренинги</li>
           <li className={styles.listBenefitsItem}>Работа с тембром голоса</li>
           <li className={styles.listBenefitsItem}>Расслабляющий логомассаж</li>
@@ -32,8 +37,8 @@ export const Stuttering = () => {
               <li className={styles.discountsItem}>Ветераны - 300 ₽</li>
             </ul>
           </div>
-          <div className={styles.circleOne} />
         </div>
+        <div className={styles.circleOne} />
       </div>
 
       <p className={styles.text}>
@@ -84,9 +89,8 @@ export const Stuttering = () => {
       </div>
       <div className={styles.wrapperBtn}>
         <ButtonW />
-       <div className={styles.circleTwo} /> 
+        <div className={styles.circleTwo} />
       </div>
-      
     </article>
   );
 };
