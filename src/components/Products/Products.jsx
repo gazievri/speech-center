@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import styles from './styles.module.sass';
 import { Stuttering, SoundSetting, Performance, Dysarthria } from './index';
 
-export const Products = () => {
-  const [active, setActive] = useState(1);
+export const Products = ({ active, setActive }) => {
 
   return (
     <section className={styles.section} id="products">

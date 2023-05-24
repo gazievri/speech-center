@@ -1,14 +1,20 @@
-import styles from "./styles.module.sass";
+import styles from './styles.module.sass';
 
-export const ContactsList = ({ whiteTheme = false, contacts = false, isMobile = false}) => {
+export const ContactsList = ({
+  whiteTheme = false,
+  contacts = false,
+  isMobile = false,
+}) => {
   return (
-    <address className={contacts ? styles.addressContacts : styles.address }>
+    <address className={contacts ? styles.addressContacts : styles.address}>
       <a
         className={whiteTheme ? styles.linkWhite : styles.link}
         href="tel:+79683829463"
         rel="noreferrer"
       >
-        <div className={whiteTheme ? styles.iconPhoneWhite : styles.iconPhone} />
+        <div
+          className={whiteTheme ? styles.iconPhoneWhite : styles.iconPhone}
+        />
         +7 (968) 382 94 63
       </a>
 
@@ -17,7 +23,9 @@ export const ContactsList = ({ whiteTheme = false, contacts = false, isMobile = 
         href="tel:+79636942941"
         rel="noreferrer"
       >
-       <div className={whiteTheme ? styles.iconPhoneWhite : styles.iconPhone} />
+        <div
+          className={whiteTheme ? styles.iconPhoneWhite : styles.iconPhone}
+        />
         +7 (963) 694 29 41
       </a>
 
@@ -27,7 +35,9 @@ export const ContactsList = ({ whiteTheme = false, contacts = false, isMobile = 
         rel="noreferrer"
         href="https://yandex.ru/maps/-/CCUoMSaO2C"
       >
-        <div className={whiteTheme ? styles.iconPlaceWhite : styles.iconPlace} />
+        <div
+          className={whiteTheme ? styles.iconPlaceWhite : styles.iconPlace}
+        />
         Калашный переулок, 5
       </a>
 
@@ -54,5 +64,3 @@ export const ContactsList = ({ whiteTheme = false, contacts = false, isMobile = 
     </address>
   );
 };
-
-

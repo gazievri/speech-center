@@ -1,7 +1,6 @@
 import styles from './styles.module.sass';
 
 export const AddressMenu = ({ isAddressOff, setIsAddressOff }) => {
-    console.log(isAddressOff)
   return (
     <div className={isAddressOff ? styles.addressOff : styles.address}>
       <a className={styles.link} href="tel:+79636942941" rel="noreferrer">

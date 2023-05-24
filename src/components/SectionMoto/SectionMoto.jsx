@@ -1,4 +1,4 @@
-import styles from "./styles.module.sass";
+import styles from './styles.module.sass';
 
 export const SectionMoto = ({ text, second = false }) => {
   return (

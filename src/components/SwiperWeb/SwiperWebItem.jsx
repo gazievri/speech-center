@@ -1,16 +1,16 @@
-import styles from "./styles.module.sass";
+import styles from './styles.module.sass';
 
-export const SwiperWebItem = ({ review, setModalData}) => {
-
-
-
+export const SwiperWebItem = ({ review, setModalData }) => {
   return (
     <>
-      <div className={styles.reviewItem} >
-        <img src={review} alt="" className={styles.reviewImg} onClick={() => setModalData(review)}/>
+      <div className={styles.reviewItem}>
+        <img
+          src={review}
+          alt=""
+          className={styles.reviewImg}
+          onClick={() => setModalData(review)}
+        />
       </div>
-      
-      
     </>
   );
 };

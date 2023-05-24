@@ -52,7 +52,7 @@ export const Dysarthria = () => {
             title="Постановка звуков"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
 
