@@ -147,11 +147,20 @@
 
 .video
     width: 540px
-    height: 301px
 
-.iframeContainer
-    width: 540px
-    height: 301px
+.videoWrp
+    position: relative
+    padding-top: 56.25%
+
+.videoWrp iframe
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    margin: 0
+    top: 0
+    left: 0
+    border: none
 
 @media screen and (max-width: 1200px)
     .title
@@ -198,7 +207,7 @@
         max-width: 255px
 
     .video
-        width: 490px
+        width: 450px
 
 @media screen and (max-width: 1000px)
     .container
@@ -216,6 +225,7 @@
         flex-direction: column
         align-items: center
 
-    .iframeContainer
-        width: 360px
-        height: 240px
+@media screen and (max-width: 550px)
+      .video
+        width: 100%
+        max-width: 300px

@@ -124,12 +124,20 @@
 
 .video
     width: 540px
-    height: 301px
 
-.iframeContainer
-    max-width: 540px
+.videoWrp
+    position: relative
+    padding-top: 56.25%
+
+.videoWrp iframe
     width: 100%
-    height: 301px
+    height: 100%
+    display: block
+    position: absolute
+    margin: 0
+    top: 0
+    left: 0
+    border: none
 
 .btnWrapper
     width: 100%
@@ -189,7 +197,7 @@
         font-size: 18px
 
     .video
-        width: 490px
+        width: 450px
 
 @media screen and (max-width: 1000px)
     .container
@@ -247,3 +255,8 @@
 
     .textBlockTitle
         font-size: 22px
+
+@media screen and (max-width: 550px)
+    .video
+        width: 100%
+        max-width: 300px

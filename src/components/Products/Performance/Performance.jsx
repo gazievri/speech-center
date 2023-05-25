@@ -7,15 +7,19 @@ export const Performance = () => {
     <article className={styles.container}>
       <h2 className={styles.title}>Ребёнок молчит у доски?</h2>
       <div className={styles.conteinerOne}>
-        <iframe
-          width="100%"
-          height="318"
-          src="https://www.youtube.com/embed/_IE5nqNm50s"
-          title="Повышение успеваемости"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+        <div className={styles.video}>
+          <div className={styles.videoWrp}>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/_IE5nqNm50s"
+              title="Повышение успеваемости"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
 
         <div className={styles.textContainer}>
           <p className={styles.text}>
