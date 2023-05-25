@@ -1,12 +1,12 @@
 import styles from './styles.module.sass';
-import img from '../../assets/images/author.webp';
+import img from '../../assets/images/author.jpg';
 // import icon from '../../assets/icons/check.svg';
 
 export const Author = () => {
   return (
     <section className={styles.section} id="author">
       <div className={styles.imgWrapper}>
-        <img className={styles.img} src={img} alt="" />
+        <img className={styles.img} src={img} alt="Портрет Татьяны Горячкиной" />
       </div>
       <article className={styles.article}>
         <div className={styles.textWrapper}>
