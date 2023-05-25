@@ -6,19 +6,19 @@ export const SoundSetting = () => {
   return (
     <article className={styles.container}>
       <h2 className={styles.title}>Не понимают, что вы говорите?</h2>
-      <p className={styles.text}>
+      {/* <p className={styles.text}>
         <span className={styles.spanBlue}>Звук</span>, которого не было,
         <span className={styles.spanBlue}> обязательно появится</span> благодаря
         четким тренингам.
-      </p>
+      </p> */}
       <div className={styles.conteinerOne}>
         <div className={styles.video}>
           <div className={styles.videoWrp}>
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/RNC4q41oNZw"
-              title="Постановка звуков"
+              src="https://www.youtube.com/embed/M2CZFoOjm18"
+              title="Звукопроизношение"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -27,10 +27,10 @@ export const SoundSetting = () => {
         </div>
 
         <div className={styles.textContainer}>
-          <p className={styles.textVideo}>
-            Теперь Сергей Михайлович легко общается и дарит людям энергию,
-            которая копилась в нём долгие годы страха перед «своими
-            недостатками» и дефектами речи
+          <p className={styles.textCta}>
+            <span className={styles.textCtaBlue}>Звук</span>, которого не было,
+            <span className={styles.textCtaBlue}> обязательно появится</span>{' '}
+            благодаря четким тренингам.
           </p>
         </div>
       </div>

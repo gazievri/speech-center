@@ -6,10 +6,10 @@ import certificate5 from './images/certificate-5-min.webp';
 import certificate6 from './images/certificate-6-min.webp';
 
 export const CERTIFICATES_DATA = [
+  certificate5,
+  certificate4,
   certificate1,
   certificate2,
-  certificate3,
-  certificate4,
-  certificate5,
+  // certificate3,
   certificate6,
 ];
