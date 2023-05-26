@@ -5,13 +5,23 @@
 .reviewItem
     width: 100%
     max-width: 730px
+    height: 100%
     max-height: 430px
     margin: 0 auto
-    // position: relative
-
+    position: relative
+    display: flex
+    
 .reviewImg
-    object-fit: contain
-    max-width: 100%
+    object-fit: cover
+
+.reviewImgHorizontal
+    composes: reviewImg
+    width: 100%
+    margin: auto 0
+
+.reviewImgVertical
+    composes: reviewImg
+    height: 100%
     margin: 0 auto
 
 .section

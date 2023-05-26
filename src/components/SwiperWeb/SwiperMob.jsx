@@ -13,6 +13,7 @@ export const SwiperMob = ({ title = '', data }) => {
   const closeModal = () => {
     setModalData('');
   };
+  
   return (
     <section className={styles.section} id="reviews">
       <h2 className={styles.title}>{title}</h2>
@@ -28,7 +29,7 @@ export const SwiperMob = ({ title = '', data }) => {
         >
           {data.map((item, index) => (
             <SwiperSlide key={index}>
-              <SwiperWebItem review={item} setModalData={setModalData} />
+              <SwiperWebItem review={item.image} isHorizontal={item.horizontal} setModalData={setModalData} />
             </SwiperSlide>
           ))}
         </Swiper>

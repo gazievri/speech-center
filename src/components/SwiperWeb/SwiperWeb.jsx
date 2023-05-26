@@ -26,7 +26,7 @@ export const SwiperWeb = ({ title = '', data }) => {
         >
           {data.map((item, index) => (
             <SwiperSlide key={index}>
-              <SwiperWebItem review={item} setModalData={setModalData} />
+              <SwiperWebItem review={item.image} isHorizontal={item.horizontal} setModalData={setModalData} />
             </SwiperSlide>
           ))}
         </Swiper>

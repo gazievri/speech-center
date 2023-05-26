@@ -22,5 +22,29 @@ export const howToFindData = [
   ],
 ];
 
-
-export const reviewData = [img1, img2, img3, img4, img5, img6]
+export const reviewData = [
+  {
+    image: img1,
+    horizontal: false,
+  },
+  {
+    image: img2,
+    horizontal: true,
+  },
+  {
+    image: img3,
+    horizontal: true,
+  },
+  {
+    image: img4,
+    horizontal: true,
+  },
+  {
+    image: img5,
+    horizontal: false,
+  },
+  {
+    image: img6,
+    horizontal: true,
+  },
+]
