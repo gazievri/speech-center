@@ -10,9 +10,40 @@
     border-radius: 10px
     @include buttonW
     transition: 0.4s
+    position: relative
+    overflow: hidden
 
-// .btn:hover
-//     opacity: 0.8
+.btn:hover
+    background: linear-gradient(0deg, #64f068 0%, #93efd6 100%)
+
+.btn:before
+    width: 3em
+    height: 100%
+    left: -30px
+    background: rgba(255, 255, 255, 0.6)
+    transform: translateX(-4em) skewX(-45deg)
+    animation: blik 5s linear 1s infinite
+    // animation-duration: 2s
+    // animation-timing-function: ease-in
+    // animation-delay: 5s
+    // animation-iteration-count: infinite
+    // animation-direction: normal
+    // animation-fill-mode: none
+    // animation-play-state: running
+    // animation-name: blik
+    content: ""
+    position: absolute
+
+@keyframes blik
+    0%
+        left: -30px
+        margin-left: 0px
+    10%
+        left: 130%
+        margin-left: 80px
+    100%
+        left: 110%
+        margin-left: 80px
 
 @media screen and (max-width: 1430px)
     .btn
