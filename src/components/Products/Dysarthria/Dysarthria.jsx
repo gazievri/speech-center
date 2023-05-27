@@ -2,6 +2,8 @@ import styles from './styles.module.sass';
 import { ButtonW } from '../../ButtonW/Button';
 // import video from '../../../assets/video/sounds.mp4';
 import useMediaQuery from '../../../utils/useMediaQuery';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
 
 export const Dysarthria = () => {
   const isTablet = useMediaQuery('(max-width: 1000px)');
@@ -13,6 +15,65 @@ export const Dysarthria = () => {
         <br />
         ОНР (3 уровня), Афазия, ДЦП, ФФНР
       </h2>
+
+      <div className={styles.containerTwo}>
+        <div className={styles.swiperWrapper}>
+          <Swiper
+            modules={[Pagination]}
+            className={styles.swiperContainer}
+            pagination={{
+              clickable: true,
+            }}
+          >
+            <SwiperSlide>
+              <div className={styles.video}>
+                <div className={styles.videoWrp}>
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/34vBnj9-XOU"
+                    title="Дизартрия"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.video}>
+                <div className={styles.videoWrp}>
+                  <iframe
+                    width="100%"
+                    height="649"
+                    src="https://www.youtube.com/embed/nVPy9J5e9js"
+                    title="Дизартрия"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
+        <div className={styles.videoTextBlock}>
+          <h4 className={styles.listVideoTitle}>Знакомьтесь, Алексей!</h4>
+          <ul className={styles.listVideo}>
+            <li className={styles.listVideoItem}>55 лет</li>
+            <li className={styles.listVideoItem}>Афазия</li>
+            <li className={styles.listVideoItem}>Потерял дар речи</li>
+            <li className={styles.listVideoItem}>
+              И вот мы снова в первый класс!
+            </li>
+            <li className={styles.listVideoItem}>
+              Работаем сложно, упорно, эффективно
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p className={styles.textOneExample}>И это только один из примеров!</p>
 
       <div className={styles.conteinerOne}>
         <div className={styles.textBlock}>
@@ -42,38 +103,6 @@ export const Dysarthria = () => {
           </div>
         )}
       </div>
-
-      <div className={styles.containerTwo}>
-        <div className={styles.video}>
-          <div className={styles.videoWrp}>
-            <iframe
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/8CRgA5fB7bA"
-              title="Постановка звуков"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-
-        <div className={styles.videoTextBlock}>
-          <h4 className={styles.listVideoTitle}>Знакомьтесь, Алексей!</h4>
-          <ul className={styles.listVideo}>
-            <li className={styles.listVideoItem}>55 лет</li>
-            <li className={styles.listVideoItem}>Афазия</li>
-            <li className={styles.listVideoItem}>Потерял дар речи</li>
-            <li className={styles.listVideoItem}>
-              И вот мы снова в первый класс!
-            </li>
-            <li className={styles.listVideoItem}>
-              Работаем сложно, упорно, эффективно
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p className={styles.textOneExample}>И это только один из примеров!</p>
 
       {isTablet && (
         <>

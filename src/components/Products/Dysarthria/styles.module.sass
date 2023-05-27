@@ -122,8 +122,23 @@
     margin-top: 22px
     text-align: center
 
+.btnWrapper
+    width: 100%
+    display: flex
+    justify-content: center
+
+.swiperWrapper
+    width: 540px
+    height: 340px
+    float: left
+    display: flex
+    justify-content: center
+    margin: 0 20px 0px 0px
+
 .video
     width: 540px
+    z-index: 5
+    margin: 0 auto
 
 .videoWrp
     position: relative
@@ -138,11 +153,6 @@
     top: 0
     left: 0
     border: none
-
-.btnWrapper
-    width: 100%
-    display: flex
-    justify-content: center
 
 @media screen and (max-width: 1200px)
     .title
@@ -196,9 +206,6 @@
     .listVideoItem
         font-size: 18px
 
-    .video
-        width: 450px
-
 @media screen and (max-width: 1000px)
     .container
         padding: 0 15px
@@ -224,6 +231,28 @@
         margin: 33px auto
         min-width: 360px
 
+    .textOneExample
+        margin-top: 0
+        color: black
+
+@media screen and (max-width: 950px)
+    .swiperWrapper
+        float: none
+        margin: 0 auto
+
+@media screen and (max-width: 600px)
+    .swiperWrapper
+        width: 500px
+        height: 320px
+
+    .video
+        width: 100%
+
+@media screen and (max-width: 550px)
+    .swiperWrapper
+        width: 360px
+        height: 240px
+
 @media screen and (max-width: 520px)
     .price
         font-size: 18px
@@ -248,10 +277,6 @@
 
     .listVideoItem
         font-size: 15px
-
-    .textOneExample
-        font-size: 24px
-        line-height: 30px
 
     .textBlockTitle
         font-size: 22px

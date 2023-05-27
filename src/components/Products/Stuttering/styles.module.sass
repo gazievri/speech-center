@@ -47,6 +47,7 @@
     justify-content: space-between
     margin-top: 11px
     margin-bottom: 58px
+    position: relative
 
 .listBenefits
     display: flex
@@ -188,7 +189,7 @@
     background: #FACD83
     z-index: 0
     right: -125px
-    top: 140px
+    top: -55px
 
 .circleTwo
     position: absolute
@@ -197,7 +198,7 @@
     border-radius: 50%
     background: #FACD83
     z-index: 0
-    right: 0
+    left: 0
     top: 0
 
 .circleThree
@@ -222,6 +223,8 @@
     width: 540px
     z-index: 5
     margin: 0 auto
+    min-height: 270px
+    min-width: 480px
 
 .videoWrp
     position: relative
@@ -319,7 +322,7 @@
         align-self: center
 
     .circleOne
-        top: 500px
+        top: 300px
         right: 10vw
         width: 117px
         height: 117px
@@ -329,8 +332,8 @@
 
 @media screen and (max-width: 653px)
     .circleOne
-        top: 530px
-        right: 0
+        top: 300px
+        right: -15px
 
 @media screen and (max-width: 600px)
     .swiperWrapper
@@ -342,5 +345,11 @@
 
 @media screen and (max-width: 530px)
     .swiperWrapper
-        width: 360px
-        height: 240px
+        max-width: 400px
+        width: 100%
+        height: 270px
+
+    .video
+        width: 100%
+        min-width: 300px
+        max-width: 530px
