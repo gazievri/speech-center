@@ -81,17 +81,19 @@
 
 @media screen and (max-width: 950px)
     .header
-        flex-direction: column-reverse
-        justify-content: flex-end
+        flex-direction: row-reverse
+        justify-content: flex-start
         padding-bottom: 30px
+        height: fit-content
 
     .logo
-        top: 65px
+        top: 15px
 
 @media screen and (max-width: 600px)
     .header
         padding: 15px
         height: fit-content
+        flex-direction: row-reverse
         gap: 17px
         position: fixed
         background-color: #E8EAF1
@@ -99,22 +101,25 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px
 
     .burgerBtn
-        background-size: 19px 13px
-        width: 19px
-        height: 18px
+        background-size: 18px 13px
+        width: 18px
+        height: 13px
+        align-self: center
 
     .burgerBtnClose
         background-size: 18px 18px
         background-position: center
         width: 18px
         height: 18px
+        align-self: center
 
     .address
         margin-right: 5px
+        margin-left: auto
 
     .logo
         left: 15px
-        top: 50px
+        top: 15px
         width: 100px
         height: 30px
 
