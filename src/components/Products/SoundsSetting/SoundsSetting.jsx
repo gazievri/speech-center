@@ -15,13 +15,11 @@ export const SoundSetting = () => {
         <div className={styles.video}>
           <div className={styles.videoWrp}>
             <iframe
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/M2CZFoOjm18"
-              title="Звукопроизношение"
+              src="https://player.vimeo.com/video/831051793?h=8c423742e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              title="zvukoproiznoshenie"
             ></iframe>
           </div>
         </div>
@@ -29,7 +27,10 @@ export const SoundSetting = () => {
         <div className={styles.textContainer}>
           <p className={styles.textCta}>
             <span className={styles.textCtaBlue}>Звук</span>, которого не было,
-            <span className={styles.textCtaBlue}> обязательно появится</span>{' '}
+            <span className={styles.textCtaBlue}>
+              {' '}
+              обязательно появится
+            </span>{' '}
             благодаря четким тренингам.
           </p>
         </div>

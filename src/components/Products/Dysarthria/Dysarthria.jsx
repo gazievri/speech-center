@@ -18,17 +18,34 @@ export const Dysarthria = () => {
 
       <div className={styles.containerTwo}>
         <div className={styles.swiperWrapper}>
-        <Swiper
+          <Swiper
             modules={[Navigation]}
             className={styles.swiperContainer}
             navigation={true}
           >
+
+
+            <SwiperSlide>
+              <div className={styles.video}>
+                <div className={styles.videoWrp}>
+                  <iframe
+                    src="https://player.vimeo.com/video/304680887?h=dc77fb0bc6&amp;dnt=1&amp;app_id=122963"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen=""
+                    title="Otziv1"
+                    className={styles.vimeoIframe}
+                  ></iframe>
+                </div>
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className={styles.video}>
                 <div className={styles.videoWrp}>
                   <iframe
                     src="https://player.vimeo.com/video/831030555?h=1c81800823"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen
                     title="dizartriya-1"
