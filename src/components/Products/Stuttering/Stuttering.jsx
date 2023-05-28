@@ -1,13 +1,15 @@
 import styles from './styles.module.sass';
 import { ButtonW } from '../../ButtonW/Button';
 import useMediaQuery from '../../../utils/useMediaQuery';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
-import { Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
+import './swiperBtn.sass'
 
 export const Stuttering = () => {
-  const isMobile = useMediaQuery('(max-width: 800px)');
+  const isMobile = useMediaQuery('(max-width: 950px)');
+  const swiper = useSwiper();
 
   return (
     <article className={styles.container}>
@@ -27,23 +29,20 @@ export const Stuttering = () => {
       <div className={styles.content}>
         <div className={styles.swiperWrapper}>
           <Swiper
-            modules={[Pagination]}
+            modules={[Navigation]}
             className={styles.swiperContainer}
-            pagination={{
-              clickable: true,
-            }}
+            navigation={true}
           >
             <SwiperSlide>
               <div className={styles.video}>
                 <div className={styles.videoWrp}>
                   <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/XjiImjvbpfk"
-                    title="Заикание"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
+                    src="https://player.vimeo.com/video/831032659?h=b3145d2287&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="zaikanie-1"
+                    className={styles.vimeoIframe}
                   ></iframe>
                 </div>
               </div>
@@ -52,13 +51,12 @@ export const Stuttering = () => {
               <div className={styles.video}>
                 <div className={styles.videoWrp}>
                   <iframe
-                    width="100%"
-                    height="649"
-                    src="https://www.youtube.com/embed/Tb7RQacYNN0"
-                    title="Заикание"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
+                    src="https://player.vimeo.com/video/831032809?h=6e9c26ca69&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="zaikanie-2"
+                    className={styles.vimeoIframe}
                   ></iframe>
                 </div>
               </div>
@@ -102,7 +100,6 @@ export const Stuttering = () => {
           как радуются вашим успехам близкие. Освободитесь от оков заикания и
           испытаете радость новой жизни.
         </p>
-
       </div>
 
       <h3 className={styles.text}>Посещая занятия Татьяны, вы получите:</h3>

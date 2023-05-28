@@ -212,33 +212,26 @@
     top: 43px
 
 .swiperWrapper
-    width: 540px
-    height: 340px
+    width: 600px
+    // height: 340px
     float: left
-    display: flex
     justify-content: center
     margin: 0 20px 0px 0px
 
 .video
-    width: 540px
-    z-index: 5
+    width: 85%
     margin: 0 auto
-    min-height: 270px
-    min-width: 480px
 
 .videoWrp
     position: relative
     padding-top: 56.25%
 
-.videoWrp iframe
-    width: 100%
-    height: 100%
-    display: block
+.vimeoIframe
     position: absolute
-    margin: 0
     top: 0
     left: 0
-    border: none
+    width: 100%
+    height: 100%
 
 @media screen and (max-width: 1200px)
     .title
@@ -301,15 +294,17 @@
     .price
         font-size: 24px
 
+@media screen and (max-width: 1005px)
+    .swiperWrapper
+        float: none
+        margin: 0 auto 35px
+        position: relative
+
 @media screen and (max-width: 1000px)
     .container
         padding: 0 15px
 
 @media screen and (max-width: 950px)
-    .swiperWrapper
-        float: none
-        margin: 0 auto
-
     .circleThree
         left: 65px
 
@@ -338,23 +333,20 @@
 @media screen and (max-width: 600px)
     .swiperWrapper
         width: 500px
-        height: 320px
 
     .video
-        width: 100%
-
-@media screen and (max-width: 550px)
-    .swiperWrapper
-        width: 360px
-        height: 240px
+        width: 80%
 
 @media screen and (max-width: 530px)
     .swiperWrapper
-        max-width: 400px
-        width: 100%
-        height: 270px
+        width: 400px
+
+@media screen and (max-width: 430px)
+    .container
+        overflow: hidden
+
+    .swiperWrapper
+        width: 370px
 
     .video
-        width: 100%
-        min-width: 300px
-        max-width: 530px
+        width: 79%

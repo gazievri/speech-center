@@ -29,13 +29,12 @@ export const Dysarthria = () => {
               <div className={styles.video}>
                 <div className={styles.videoWrp}>
                   <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/34vBnj9-XOU"
-                    title="Дизартрия"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
+                    src="https://player.vimeo.com/video/831030555?h=1c81800823"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="dizartriya-1"
+                    className={styles.vimeoIframe}
                   ></iframe>
                 </div>
               </div>
@@ -44,13 +43,12 @@ export const Dysarthria = () => {
               <div className={styles.video}>
                 <div className={styles.videoWrp}>
                   <iframe
-                    width="100%"
-                    height="649"
-                    src="https://www.youtube.com/embed/nVPy9J5e9js"
-                    title="Дизартрия"
+                    src="https://player.vimeo.com/video/831030546?h=b6d885c1b9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullscreen
+                    title="dizartriya-2"
+                    className={styles.vimeoIframe}
                   ></iframe>
                 </div>
               </div>

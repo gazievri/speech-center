@@ -9,15 +9,15 @@ export const Performance = () => {
       <div className={styles.conteinerOne}>
         <div className={styles.video}>
           <div className={styles.videoWrp}>
-            <iframe
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/_IE5nqNm50s"
-              title="Повышение успеваемости"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+              <iframe
+                src="https://player.vimeo.com/video/829374588?h=31b07e8773&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                className={styles.vimeoIframe}
+                title="performance"
+              ></iframe>
+            {/* <script src="https://player.vimeo.com/api/player.js"></script> */}
           </div>
         </div>
 
