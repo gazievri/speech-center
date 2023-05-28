@@ -3,7 +3,7 @@ import { ButtonW } from '../../ButtonW/Button';
 // import video from '../../../assets/video/sounds.mp4';
 import useMediaQuery from '../../../utils/useMediaQuery';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { Pagination, Navigation } from 'swiper';
 
 export const Dysarthria = () => {
   const isTablet = useMediaQuery('(max-width: 1000px)');
@@ -18,12 +18,10 @@ export const Dysarthria = () => {
 
       <div className={styles.containerTwo}>
         <div className={styles.swiperWrapper}>
-          <Swiper
-            modules={[Pagination]}
+        <Swiper
+            modules={[Navigation]}
             className={styles.swiperContainer}
-            pagination={{
-              clickable: true,
-            }}
+            navigation={true}
           >
             <SwiperSlide>
               <div className={styles.video}>
