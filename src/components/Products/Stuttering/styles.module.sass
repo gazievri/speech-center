@@ -273,10 +273,6 @@
     .circleTwo
         display: none
 
-    // .circleThree
-    //     left: -63px
-    //     top: 350px
-
     .img
         width: 325px
         height: 490px
@@ -341,12 +337,34 @@
     .swiperWrapper
         width: 400px
 
+@media screen and (max-width: 443px)
+    .circleOne
+        display: none
+
 @media screen and (max-width: 430px)
     .container
-        overflow: hidden
+        min-width: 300px
 
     .swiperWrapper
         width: 370px
 
     .video
-        width: 85%
+        width: 80%
+
+@media screen and (max-width: 400px)
+    .abonement
+        text-align: center
+
+    .discountsBlock
+        align-items: center
+
+    .priceBlock
+        min-height: none
+        height: fit-content
+        max-height: none
+
+    .swiperWrapper
+        width: 300px
+
+    .video
+        width: 75%

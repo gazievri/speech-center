@@ -38,7 +38,7 @@ export const Stuttering = () => {
                 <div className={styles.videoWrp}>
                   <iframe
                     src="https://player.vimeo.com/video/831032659?h=b3145d2287&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                    frameborder="0"
+                    frameBorder="0"
                     width="300"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen
@@ -53,7 +53,7 @@ export const Stuttering = () => {
                 <div className={styles.videoWrp}>
                   <iframe
                     src="https://player.vimeo.com/video/831032809?h=6e9c26ca69&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen
                     title="zaikanie-2"
@@ -66,7 +66,7 @@ export const Stuttering = () => {
         </div>
 
         <div className={styles.circleThree} />
-        {/* <div className={styles.textBlockVideo}> */}
+
         <h3 className={styles.text}>
           После нескольких занятий люди часто говорят:
         </h3>
@@ -115,6 +115,7 @@ export const Stuttering = () => {
           <li className={styles.listBenefitsItem}>Расслабляющий логомассаж</li>
           <li className={styles.listBenefitsItem}>Техника плавной речи</li>
         </ul>
+
         <div className={styles.priceBlock}>
           <p className={styles.price}>2700 ₽</p>
           <p className={styles.time}>60 минут</p>
