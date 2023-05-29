@@ -12,7 +12,7 @@ export const Dysarthria = () => {
     <article className={styles.container}>
       <h2 className={styles.title}>
         Дизартрия, дисграфия, дислексия, дислалия,
-        <br />
+        <br className={styles.br} />
         ОНР (3 уровня), Афазия, ДЦП, ФФНР
       </h2>
 
