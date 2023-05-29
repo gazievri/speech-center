@@ -3,25 +3,16 @@
   padding: 0;
 }
 
+/* .swiper-button-next {
+  bottom: -500px;
+  right: 0;
+}
 
+.swoper-slide {
+  position: absolute;
+} */
 .swiper-wrapper {
   display: flex;
+  /* justify-content: center; */
   align-items: center;
-}
-.swiper-button-prev, .swiper-button-next {
-    top: 110%;
-}
-
-.swiper, swiper-container {
-    overflow: visible;
-    overflow-x: clip
-}
-
-.swiper-button-prev {
-    right: 60%;
-    left: 40%;
-}
-.swiper-button-next{
-    right: 40%;
-    left: 60%;
 }
