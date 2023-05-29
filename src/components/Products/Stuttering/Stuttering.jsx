@@ -51,7 +51,7 @@ export const Stuttering = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.video}>
-                <div className={styles.videoWrp} style={{ height: "300px"}}>
+                <div className={styles.videoWrp} style={{ height: "286px"}}>
                   <iframe
                     src="https://player.vimeo.com/video/831032809?h=6e9c26ca69&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                     frameBorder="0"
