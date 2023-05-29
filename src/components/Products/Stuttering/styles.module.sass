@@ -336,14 +336,23 @@
 
     .video
         width: 80%
+        max-height: 225px
 
 @media screen and (max-width: 530px)
     .swiperWrapper
         width: 400px
+    .video
+        max-height: 180px
+        display: flex
+        flex-direction: column
+    .videoWrp
+        max-height: 100%
 
 @media screen and (max-width: 443px)
     .circleOne
         display: none
+    .video
+        max-height: 166px
 
 @media screen and (max-width: 430px)
     .container
@@ -372,3 +381,4 @@
 
     .video
         width: 75%
+        max-height: 135px
