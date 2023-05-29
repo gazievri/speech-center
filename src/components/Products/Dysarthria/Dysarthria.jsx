@@ -25,7 +25,7 @@ export const Dysarthria = () => {
           >
             <SwiperSlide>
               <div className={styles.video}>
-                <div className={styles.videoWrp}>
+                <div className={styles.videoWrp} style={{ height: "300px"}}>
                   <iframe
                     src="https://player.vimeo.com/video/831054370?h=80ff22f721&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                     frameBorder="0"
@@ -40,7 +40,7 @@ export const Dysarthria = () => {
 
             <SwiperSlide>
               <div className={styles.video}>
-                <div className={styles.videoWrp}>
+                <div className={styles.videoWrp} style={{ height: "300px"}}>
                   <iframe
                     src="https://player.vimeo.com/video/831030555?h=1c81800823"
                     frameBorder="0"
@@ -54,7 +54,7 @@ export const Dysarthria = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.video}>
-                <div className={styles.videoWrp}>
+                <div className={styles.videoWrp} style={{ height: "300px"}}>
                   <iframe
                     src="https://player.vimeo.com/video/831030546?h=b6d885c1b9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                     frameBorder="0"
