@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
 /* .swiper-button-next {
   bottom: -500px;
   right: 0;
