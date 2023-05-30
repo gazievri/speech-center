@@ -4,7 +4,7 @@ export const ButtonW = () => {
   return (
     <a
       className={styles.btn}
-      href="https://wa.me/79306697700?text=Здравствуйте!"
+      href="https://wa.me/79683829463?text=Здравствуйте,%20Татьяна!"
       target="_blank"
       rel="noreferrer"
     >

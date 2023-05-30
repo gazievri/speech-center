@@ -40,27 +40,6 @@ export const ContactsList = ({
         />
         Калашный переулок, 5
       </a>
-
-      {/* {contacts && (
-        <ul className={styles.contscts__socials}>
-          <li className={styles.linkSocialFb}>
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.link}
-            ></a>
-          </li>
-          <li className={styles.linkSocialInst}>
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.link}
-            ></a>
-          </li>
-        </ul>
-      )} */}
     </address>
   );
 };
