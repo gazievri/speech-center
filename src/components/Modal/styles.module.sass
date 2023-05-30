@@ -1,0 +1,38 @@
+.modal
+    // position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 9
+    position: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #0e0d0d60
+    width: 100%
+
+.img
+    max-width: 1000px
+    // margin: auto
+    max-height: 90%
+
+.close
+    display: block
+    width: 40px
+    height: 40px
+    object-fit: cover
+    position: absolute
+    background: url(../../assets/icons/closeIcon.png)
+    background-size: contain
+    top: 5%
+    right: 5%
+    z-index: 10
+    cursor: pointer
+
+@media screen and (max-width: 1000px)
+    .close
+        top: 20%
+        right: 10%
+    .img
+        max-width: 80%

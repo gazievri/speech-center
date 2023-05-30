@@ -1,0 +1,74 @@
+@import "../../styles/@mixins"
+
+.section
+    min-height: 500px
+    padding: 70px 0 0
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 50px
+    position: relative
+    min-width: 350px
+
+.menu
+    display: flex
+
+.menuBtn
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 278px
+    height: 104px
+    border-radius: 50px 50px 0px 0px
+    @include productMenu
+    text-align: center
+    background-color: #71A4D7
+    color: white
+
+.menuBtnActive
+    composes: menuBtn
+    background: #FACD83
+    color: black
+
+.circleOne
+    position: absolute
+    width: 301px
+    height: 301px
+    border-radius: 50%
+    background: #FACD83
+    z-index: 0
+    right: 40px
+    top: 350px
+
+@media screen and (max-width: 1200px)
+    .section
+        gap: 30px
+
+    .menuBtn
+        width: 238.5px
+        font-size: 20px
+        line-height: 26px
+
+    .wrapper
+        max-width: 954px
+
+@media screen and (max-width: 970px)
+    .menuBtn
+        width: 25vw
+        font-size: 12px
+        line-height: 18px
+        height: 80px
+
+@media screen and (max-width: 810px)
+
+    .menu
+        overflow: auto
+        cursor: grab
+        max-width: 100%
+
+    .menuBtn
+        height: 57px
+        min-width: 140px
+
+    .section
+        min-width: 300px

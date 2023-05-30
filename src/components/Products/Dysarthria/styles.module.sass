@@ -1,0 +1,304 @@
+@import "../../../styles/@mixins"
+
+.container
+    max-width: 1110px
+    width: 100%
+    z-index: 1
+    margin-bottom: 126px
+    position: relative
+
+.title
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 35px
+    line-height: 44px
+    color: black
+    margin-bottom: 20px
+    position: relative
+    width: fit-content
+
+.title::before
+    content: ""
+    width: 355px
+    height: 4px
+    background-color: #71A4D7
+    position: absolute
+    bottom: -2px
+    left: -164px
+
+.conteinerOne
+    display: flex
+    gap: 70px
+    margin: 48px 0 0
+
+.textBlock
+    display: flex
+    flex-direction: column
+    gap: 30px
+    justify-content: center
+
+.textBlockTitle
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 25px
+    line-height: 22px
+    color: #71A4D7
+
+.textBlockParagraph
+    @include textPriceBlock
+    font-weight: 300
+    font-size: 24px
+    line-height: 38px
+    color: #232323
+
+.priceBlock
+    background: #71A4D7
+    border-radius: 10px
+    min-width: 635px
+    padding: 25px 0 23px
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 400px
+    box-sizing: border-box
+    z-index: 1
+
+.price
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 25px
+    line-height: 31px
+    margin-bottom: 30px
+
+.discounts
+    margin-bottom: 57px
+
+.discountsTitle
+    @include textPriceBlock
+    font-weight: 600
+    font-size: 20px
+    line-height: 44px
+
+.discountsItem
+    @include textPriceBlock
+    font-weight: 500
+    font-size: 20px
+    line-height: 34px
+
+.containerTwo
+    margin: 48px 0 0
+    display: flex
+    gap: 30px
+
+.videoTextBlock
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.listVideoTitle
+    @include textPriceBlock
+    font-weight: 400
+    font-size: 20px
+    line-height: 44px
+    color: #232323
+
+.listVideo
+    list-style: inside
+    padding-left: 10px
+
+.listVideoItem
+    @include textPriceBlock
+    font-weight: 400
+    font-size: 20px
+    line-height: 44px
+    color: #232323
+
+.textOneExample
+    @include textPriceBlock
+    font-weight: 600
+    font-size: 30px
+    line-height: 44px
+    color: #71A4D7
+    margin-top: 22px
+    text-align: center
+
+.btnWrapper
+    width: 100%
+    display: flex
+    justify-content: center
+
+.swiperWrapper
+    width: 540px
+    float: left
+    justify-content: center
+    margin: 0 20px 0px 0px
+
+.video
+    width: 85%
+    margin: 0 auto
+    background: rgb(94,92,92)
+    background: linear-gradient(90deg, rgba(94,92,92,1) 0%, rgba(41,35,35,1) 50%, rgba(94,92,92,1) 100%)
+
+.videoWrp
+    position: relative
+    padding-top: 56.25%
+
+.vimeoIframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+@media screen and (max-width: 1200px)
+    .title
+        font-size: 24px
+        line-height: 44px
+
+    .container
+        margin-bottom: 70px
+
+    .conteinerOne
+        gap: 82px
+        margin: 30px 0 0
+
+    .priceBlock
+        min-width: 492px
+        max-height: 343px
+        min-height: 340px
+
+    .price
+        font-size: 20px
+        margin-bottom: 15px
+
+    .discounts
+        margin-bottom: 30px
+
+    .discountsTitle
+        font-size: 18px
+
+    .discountsItem
+        font-size: 18px
+
+    .textBlockTitle
+        font-size: 20px
+        line-height: 22px
+
+    .textBlockParagraph
+        font-size: 20px
+
+    .containerTwo
+        margin: 35px 0 0
+        gap: 84px
+
+    .textOneExample
+        margin-top: 35px
+        font-size: 20px
+        line-height: 44px
+
+    .listVideoTitle
+        font-size: 18px
+
+    .listVideoItem
+        font-size: 18px
+
+@media screen and (max-width: 1000px)
+    .container
+        padding: 0 15px
+
+    .conteinerOne
+        flex-direction: column
+        align-items: center
+
+    .textContainer
+        max-width: none
+
+    .containerTwo
+        flex-direction: column
+        align-items: center
+        gap: 20px
+
+    .iframeContainer
+        height: 240px
+
+    .priceBlock
+        max-width: 492px
+        min-height: 195px
+        margin: 33px auto
+        min-width: 360px
+
+    .textOneExample
+        margin-top: 0
+        color: black
+
+@media screen and (max-width: 950px)
+    .swiperWrapper
+        float: none
+        margin: 0 auto
+
+@media screen and (max-width: 600px)
+    .swiperWrapper
+        width: 500px
+
+    .video
+        width: 80%
+        background: none
+
+@media screen and (max-width: 577px)
+    .br
+        display: none
+
+@media screen and (max-width: 550px)
+    // .swiperWrapper
+    //     width: 360px
+    //     height: 240px
+
+@media screen and (max-width: 530px)
+    .swiperWrapper
+        width: 400px
+
+@media screen and (max-width: 520px)
+    .price
+        font-size: 18px
+
+    .discountsTitle
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 10px
+
+    .discountsItem
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+    .discountsItem
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+
+    .listVideoTitle
+        font-size: 18px
+
+    .listVideoItem
+        font-size: 15px
+
+    .textBlockTitle
+        font-size: 22px
+        text-align: center
+
+    .price
+        text-align: center
+
+@media screen and (max-width: 430px)
+    .container
+
+    .swiperWrapper
+        width: 300px
+
+    .video
+        width: 80%
+
+    .priceBlock
+        height: 100%
+        min-height: 100%
+        min-width: 200px

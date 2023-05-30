@@ -1,0 +1,63 @@
+@import "../../styles/@mixins"
+
+.iconPhone
+    background-image: url('../../assets/icons/phoneHeader.svg')
+    width: 20px
+    height: 20px
+.iconPhoneWhite
+    background-image: url('../../assets/icons/phoneFooter.svg')
+    width: 20px
+    height: 20px
+
+.iconPlaceWhite
+    background-image: url('../../assets/icons/adressFooter.svg')
+    width: 20px
+    height: 20px
+
+.iconPlace
+    background-image: url('../../assets/icons/adressHeader.svg')
+    width: 15px
+    height: 20px
+
+.linkSocialFb
+    background-image: url('../../assets/icons/facebookSocial.svg')
+    width: 24px
+    height: 24px
+.linkSocialInst
+    background-image: url('../../assets/icons/instagramSocial.svg')
+    width: 24px
+    height: 24px
+
+.contscts__socials
+    padding-top: 14px
+    display: flex
+    gap: 10px
+
+.address
+    display: flex
+    flex-direction: column
+
+.adressContacts
+    display: flex
+    flex-direction: column
+
+.link
+    display: flex
+    gap: 10px
+    height: 27px
+    align-items: center
+    @include contacts
+    color: black
+
+.linkWhite
+    display: flex
+    gap: 10px
+    height: 27px
+    align-items: center
+    @include contacts
+    color: white
+
+@media screen and (max-width: 1200px)
+    .address
+        flex-direction: row
+        gap: 30px

@@ -1,0 +1,36 @@
+@import "../../styles/@mixins"
+
+// .navblock
+
+.navlist
+    display: flex
+    gap: 33px
+    @include nav
+
+.navblockFooter
+    color: white
+
+.navlistFooter
+    display: flex
+    flex-direction: column
+    gap: 7px
+    @include nav
+
+.navlistLi
+    transition: 0.4s
+
+.navlistLi:hover
+    scale: 1.1
+
+.navlistFooterLi
+    color: white
+
+@media screen and ('max-width: 1200px')
+    .navlistFooter
+        gap: 15px
+
+@media screen and ('max-width: 950px')
+    .navlist
+        flex-direction: column
+        font-size: 14px
+        gap: 15px

@@ -1,0 +1,74 @@
+@import "../../styles/@mixins"
+
+.footer
+    padding: 64px 0 74px
+    width: 100%
+    background-color: #71A4D7
+    display: flex
+    align-items: center
+    flex-direction: column
+
+.footerWrapper
+    width: 100%
+    max-width: 1110px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.logo
+    width: 255px
+    height: 71px
+
+.iconPhoneWhite
+    background-image: url('../../assets/icons/phoneFooter.svg')
+    width: 20px
+    height: 20px
+
+.iconPlaceWhite
+    background-image: url('../../assets/icons/adressFooter.svg')
+    width: 20px
+    height: 20px
+
+.address
+    display: flex
+    flex-direction: column
+
+.address
+    display: flex
+    flex-direction: column
+
+.adressContacts
+    display: flex
+    flex-direction: column
+
+.linkWhite
+    display: flex
+    gap: 10px
+    height: 27px
+    align-items: center
+    @include contacts
+    color: white
+
+.credentials
+    display: flex
+    margin: 50px auto 0
+    gap: 100px
+
+@media screen and (max-width: 1200px)
+    .footer
+        padding: 35px 35px 70px
+
+@media screen and (max-width: 850px)
+    .footerWrapper
+        flex-direction: column
+        gap: 20px
+        // align-items: flex-start
+
+    .credentials
+        flex-direction: column
+        gap: 10px
+        align-items: center
+
+@media screen and (max-width: 550px)
+    .footerWrapper
+        align-items: flex-start

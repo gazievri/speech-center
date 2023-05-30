@@ -1,0 +1,99 @@
+.section
+    width: 100%
+    display: flex
+    gap: 40px
+    justify-content: center
+    padding-bottom: 100px
+    padding-top: 100px
+    position: relative
+    z-index: 2
+
+.imgWrapper
+    max-width: 340px
+    max-height: 450px
+    overflow: hidden
+    display: flex
+
+.img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.textWrapper
+    display: flex
+    align-items: center
+    gap: 8px
+    max-width: 683px
+
+.textIcon
+    background: url('../../assets/icons/check.svg')
+    background-repeat: no-repeat
+    min-width: 44px
+    height: 44px
+
+.text
+    font-family: Manrope
+    font-size: 20px
+    font-weight: 400
+    line-height: 44px
+
+.article
+    display: flex
+    flex-direction: column
+    gap: 15px
+    justify-content: center
+
+.roundOne
+    background: #FACD83
+    border-radius: 50%
+    width: 41px
+    height: 41px
+    position: absolute
+    top: 187px
+    left: 0
+    z-index: 0
+
+.roundTwo
+    top: -144px
+    right: 0
+    position: absolute
+    background: #FACD83
+    border-radius: 50%
+    width: 150px
+    height: 150px
+
+@media screen and (max-width: 1200px)
+    .section
+        padding: 70px 29px 70px
+    .text
+        font-family: Manrope
+        font-size: 18px
+        font-weight: 400
+        line-height: 32px
+
+    .roundOne
+        display: none
+
+@media screen and (max-width: 1000px)
+    .article
+        gap: 8px
+    .roundTwo
+        display: none
+
+@media screen and (max-width: 850px)
+    .section
+        flex-direction: column
+        align-items: center
+
+    .textIcon
+        background-size: contain
+        min-width: 15px
+        height: 15px
+
+    .text
+        font-size: 15px
+        line-height: 25px
+
+@media screen and (max-width: 600px)
+    .section
+        padding: 70px 29px 0

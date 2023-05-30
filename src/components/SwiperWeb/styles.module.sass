@@ -1,0 +1,77 @@
+@import "../../styles/@mixins"
+
+// .swiperContainer
+
+.reviewItem
+    width: 100%
+    max-width: 730px
+    height: 100%
+    max-height: 430px
+    margin: 0 auto
+    position: relative
+    display: flex
+    
+.reviewImg
+    object-fit: cover
+
+.reviewImgHorizontal
+    composes: reviewImg
+    width: 100%
+    margin: auto 0
+
+.reviewImgVertical
+    composes: reviewImg
+    height: 100%
+    margin: 0 auto
+
+.section
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 100%
+    max-width: 1100px
+    margin: 0 auto
+    padding: 100px 0 0
+    position: relative
+
+.round
+    position: absolute
+    top: 74px
+    left: -90px
+    background-color: #FACD83
+    width: 67px
+    height: 67px
+    border-radius: 50%
+
+.reviewWrapper
+    width: 100%
+    max-width: 1100px
+    display: flex
+    justify-content: center
+
+.title
+    @include howToFindTitle
+    padding-bottom: 30px
+
+@media screen and ('max-width: 1200px')
+    .reviewItem
+        max-width: 600px
+        max-height: 380px
+        overflow: hidden
+        margin: 0 auto
+        object-fit: cover
+    .section
+        padding: 70px 35px 0
+
+    .title
+        @include sectionTitleTablet
+
+@media screen and ('max-width: 800px')
+    .reviewItem
+        margin: 0 auto 40px
+
+@media screen and ('max-width: 562px')
+    .title
+        text-align: center
+

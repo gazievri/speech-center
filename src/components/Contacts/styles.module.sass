@@ -1,0 +1,39 @@
+@import "../../styles/@mixins"
+.contacts
+    max-width: 1110px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+    padding-bottom: 157px
+    position: relative
+
+.title
+    @include contactsTitle
+
+.text
+    padding-bottom: 15px
+    @include contactsText
+
+.round
+    position: absolute
+    background: #FACD83
+    width: 145px
+    height: 145px
+    border-radius: 50%
+    top: 0
+    left: -160px
+
+@media screen and ('max-width: 1200px')
+    .contacts
+        padding: 0 30px 100px
+        gap: 38px
+
+    .title
+        @include sectionTitleTablet
+        font-weight: 400
+@media screen and (max-width: 750px)
+    .contacts
+        flex-direction: column
+        padding-bottom: 60px

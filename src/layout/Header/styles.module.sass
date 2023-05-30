@@ -1,0 +1,139 @@
+@import "../../styles/@mixins"
+
+.header
+    height: 139px
+    max-width: 1110px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+
+.logo
+    width: 255px
+    height: 71px
+
+.address
+    display: flex
+    align-items: center
+    gap: 14px
+    margin-right: 25px
+
+.link
+    display: flex
+    gap: 10px
+    height: 27px
+    align-items: center
+    @include contacts
+
+.iconPhone
+    background-image: url('../../assets/icons/phoneHeader.svg')
+    width: 20px
+    height: 20px
+    background-repeat: no-repeat
+
+.iconPlace
+    background-image: url('../../assets/icons/adressHeader.svg')
+    width: 16px
+    height: 20px
+    background-repeat: no-repeat
+
+.burgerBtn
+    background-image: url('../../assets/icons/burger.svg')
+    background-repeat: no-repeat
+    background-size: 40px 30px
+    width: 40px
+    height: 30px
+
+.burgerBtnClose
+    background-image: url('../../assets/icons/burgerClose.svg')
+    background-repeat: no-repeat
+    background-size: 30px 30px
+    background-position: center
+    width: 40px
+    height: 30px
+
+.btnContacts
+    background-image: url('../../assets/icons/arrowDown.svg')
+    background-repeat: no-repeat
+    background-size: 10px 10px
+    background-position: center
+    width: 15px
+    height: 15px
+
+@media screen and (max-width: 1200px)
+    .header
+        flex-direction: column
+        align-items: flex-end
+        max-width: 1200px
+        padding-right: 35px
+        padding-top: 30px
+        justify-content: flex-start
+        gap: 22px
+        position: relative
+
+    .logo
+        width: 201px
+        height: 60px
+        position: absolute
+        left: 35px
+        top: 30px
+
+@media screen and (max-width: 950px)
+    .header
+        flex-direction: row-reverse
+        justify-content: flex-start
+        padding-bottom: 30px
+        height: fit-content
+
+    .logo
+        top: 15px
+
+@media screen and (max-width: 600px)
+    .header
+        padding: 15px
+        height: fit-content
+        flex-direction: row-reverse
+        gap: 17px
+        position: fixed
+        background-color: #E8EAF1
+        z-index: 100
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px
+
+    .burgerBtn
+        background-size: 18px 13px
+        width: 18px
+        height: 13px
+        align-self: center
+
+    .burgerBtnClose
+        background-size: 18px 18px
+        background-position: center
+        width: 18px
+        height: 18px
+        align-self: center
+
+    .address
+        margin-right: 5px
+        margin-left: auto
+
+    .logo
+        left: 15px
+        top: 15px
+        width: 100px
+        height: 30px
+
+    .link
+        font-size: 12px
+
+    .iconPhone
+        width: 14px
+        height: 14px
+        background-size: cover
+
+@media screen and (max-width: 350px)
+    .header
+        gap: 0px
+
+    .address
+        gap: 5px
